@@ -1,49 +1,57 @@
-<!--HEADER-->
-
-<div class="row hidden-mobile">
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-        <h1 class="page-title txt-color-blueDark">
-            <!-- PAGE HEADER -->
+<div class="row" id="main-row">
+    <div class="row hidden-mobile">
+        <!-- PAGE HEADER -->
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <h1 class="page-title txt-color-blueDark">
             <i class="fa-fw fa fa-video-camera"></i> 
                 Conferencias
         </h1>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-align-right">
-        <div class="page-title">
-            <a href="javascript:void(0);" class="btn btn-default">Upload</a>
-            <a href="javascript:void(0);" class="btn btn-default">Load Library</a>
         </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-align-right">
+            <div class="page-title">
+                <a href="javascript:void(0);" class="btn btn-default">Upload</a>
+                <a href="javascript:void(0);" class="btn btn-default">Load Library</a>
+            </div>
+        </div>
+        <!-- END OF HEADER -->
     </div>
-</div>
-
-<!--END OF HEADER-->
-
- <!-- CHAT -->
-<style>
-.main-position{
-    position: absolute;
-    right: 0;
-}
-.chat-main {
-    position: relative;
-    border-style: solid;
-    border-width: 1px;
-    width: 250px;
-    height: 100%;
-    background-color: #2C2C2C;
-    
-}
-</style>
-<div class="main-position">
-    <div class="chat-main">
-        <li class="chat-users top-menu-invisible">
-            <a><i class="fa fa-lg fa-fw fa-comment-o"><em class="bg-color-black flash animated">!</em></i> <span class="menu-item-parent" style="cursor:pointer">Smart Chat</span></a>
-            <ul>
-                <li>
-                    <!-- DISPLAY USERS -->
-                    <div class="display-users">
-                        <input class="form-control chat-user-filter" placeholder="Filter" type="text">
-                        <a href="#" class="usr" data-chat-id="cha1" data-chat-fname="Sadi" data-chat-lname="Orlaf" data-chat-status="busy" data-chat-alertmsg="Sadi Orlaf is in a meeting. Please do not disturb!" data-chat-alertshow="true" data-rel="popover-hover" data-placement="left" data-html="true" data-content="
+    <div class="row" id="mainDiv">
+        <!-- VIDEO PRINCIPAL -->
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="mainVideoColumn">
+            <div id="containingBlockLocal">
+                <div class="videoWrapper">
+                    <object>
+                        <param name="allowscriptaccess" value="always"></param>
+                        <video id="localVideo"></video>
+                    </object>
+                </div>
+            </div>
+            <!-- VIDEO REMOTO -->
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="remoteVideoColumn">
+                <div id="containingBlockRemote">
+                    <div class="videoWrapper">
+                        <object>
+                            <param name="allowscriptaccess" value="always"></param>
+                            <div id="remotes"></div>
+                        </object>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN VIDEO REMOTO -->
+        </div>
+        <!-- FIN VIDEO PRINCIPAL -->
+        <!-- CHAT -->
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="chatColumn">
+            <div class="main-position">
+                <div class="chat-main">
+                    <li class="chat-users top-menu-invisible">
+                        <a><i class="fa fa-lg fa-fw fa-comment-o"><em class="bg-color-black flash animated">!</em></i> <span class="menu-item-parent" style="cursor:pointer">Smart Chat</span></a>
+                        <ul>
+                            <li>
+                                <!-- DISPLAY USERS -->
+                                <div class="display-users">
+                                    <input class="form-control chat-user-filter" placeholder="Filter" type="text">
+                                    <a href="#" class="usr" data-chat-id="cha1" data-chat-fname="Sadi" data-chat-lname="Orlaf" data-chat-status="busy" data-chat-alertmsg="Sadi Orlaf is in a meeting. Please do not disturb!" data-chat-alertshow="true" data-rel="popover-hover" data-placement="left" data-html="true" data-content="
                                             <div class='usr-card'>
                                                 <img src='img/avatars/5.png' alt='Sadi Orlaf'>
                                                 <div class='usr-card-content'>
@@ -52,11 +60,11 @@
                                                 </div>
                                             </div>
                                         ">
-                            <i></i>Sadi Orlaf
-                        </a>
-                        <br>
-                        <br>
-                        <a href="#" class="usr" data-chat-id="cha2" data-chat-fname="Jessica" data-chat-lname="Dolof" data-chat-status="online" data-chat-alertmsg="" data-chat-alertshow="false" data-rel="popover-hover" data-placement="left" data-html="true" data-content="
+                                        <i></i>Sadi Orlaf
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <a href="#" class="usr" data-chat-id="cha2" data-chat-fname="Jessica" data-chat-lname="Dolof" data-chat-status="online" data-chat-alertmsg="" data-chat-alertshow="false" data-rel="popover-hover" data-placement="left" data-html="true" data-content="
                                             <div class='usr-card'>
                                                 <img src='img/avatars/1.png' alt='Jessica Dolof'>
                                                 <div class='usr-card-content'>
@@ -65,11 +73,11 @@
                                                 </div>
                                             </div>
                                         ">
-                            <i></i>Jessica Dolof
-                        </a>
-                        <br>
-                        <br>
-                        <a href="#" class="usr" data-chat-id="cha3" data-chat-fname="Zekarburg" data-chat-lname="Almandalie" data-chat-status="online" data-rel="popover-hover" data-placement="left" data-html="true" data-content="
+                                        <i></i>Jessica Dolof
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <a href="#" class="usr" data-chat-id="cha3" data-chat-fname="Zekarburg" data-chat-lname="Almandalie" data-chat-status="online" data-rel="popover-hover" data-placement="left" data-html="true" data-content="
                                             <div class='usr-card'>
                                                 <img src='img/avatars/3.png' alt='Zekarburg Almandalie'>
                                                 <div class='usr-card-content'>
@@ -78,11 +86,11 @@
                                                 </div>
                                             </div>
                                         ">
-                            <i></i>Zekarburg Almandalie
-                        </a>
-                        <br>
-                        <br>
-                        <a href="#" class="usr" data-chat-id="cha4" data-chat-fname="Barley" data-chat-lname="Krazurkth" data-chat-status="away" data-rel="popover-hover" data-placement="left" data-html="true" data-content="
+                                        <i></i>Zekarburg Almandalie
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <a href="#" class="usr" data-chat-id="cha4" data-chat-fname="Barley" data-chat-lname="Krazurkth" data-chat-status="away" data-rel="popover-hover" data-placement="left" data-html="true" data-content="
                                             <div class='usr-card'>
                                                 <img src='img/avatars/4.png' alt='Barley Krazurkth'>
                                                 <div class='usr-card-content'>
@@ -91,11 +99,11 @@
                                                 </div>
                                             </div>
                                         ">
-                            <i></i>Barley Krazurkth
-                        </a>
-                        <br>
-                        <br>
-                        <a href="#" class="usr offline" data-chat-id="cha5" data-chat-fname="Farhana" data-chat-lname="Amrin" data-chat-status="incognito" data-rel="popover-hover" data-placement="left" data-html="true" data-content="
+                                        <i></i>Barley Krazurkth
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <a href="#" class="usr offline" data-chat-id="cha5" data-chat-fname="Farhana" data-chat-lname="Amrin" data-chat-status="incognito" data-rel="popover-hover" data-placement="left" data-html="true" data-content="
                                             <div class='usr-card'>
                                                 <img src='img/avatars/female.png' alt='Farhana Amrin'>
                                                 <div class='usr-card-content'>
@@ -104,11 +112,11 @@
                                                 </div>
                                             </div>
                                         ">
-                            <i></i>Farhana Amrin (offline)
-                        </a>
-                        <br>
-                        <br>
-                        <a href="#" class="usr offline" data-chat-id="cha6" data-chat-fname="Lezley" data-chat-lname="Jacob" data-chat-status="incognito" data-rel="popover-hover" data-placement="left" data-html="true" data-content="
+                                        <i></i>Farhana Amrin (offline)
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <a href="#" class="usr offline" data-chat-id="cha6" data-chat-fname="Lezley" data-chat-lname="Jacob" data-chat-status="incognito" data-rel="popover-hover" data-placement="left" data-html="true" data-content="
                                             <div class='usr-card'>
                                                 <img src='img/avatars/male.png' alt='Lezley Jacob'>
                                                 <div class='usr-card-content'>
@@ -117,62 +125,95 @@
                                                 </div>
                                             </div>
                                         ">
-                            <i></i>Lezley Jacob (offline)
-                        </a>
-                    </div>
-                    <!-- END DISPLAY USERS -->
-                </li>
-            </ul>
-        </li>
+                                        <i></i>Lezley Jacob (offline)
+                                    </a>
+                                </div>
+                                <!-- END DISPLAY USERS -->
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </div>
+        <!-- FIN CHAT -->
     </div>
 </div>
+<!--ESTILO DEL CHAT-->
+<style>
+.main-position {
+    position: absolute;
+    right: 0;
+}
+
+.chat-main {
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    width: 250px;
+    height: 100%;
+    background-color: #2C2C2C;
+}
+</style>
+<!--ESTILO DE LOS VIDEOS-->
+<style>
+#mainVideoColumn {
+    height: 70vh;
+    width: 70%;
+    border-style: solid;
+    border-color: red;
+}
+
+#remoteVideoColumn {
+    height: 18vh;
+    width: 20%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-style: solid;
+    border-color: red;
+    display: none;
+}
+
+#chatColumn {
+    position: absolute;
+    height: 20vh;
+    width: 15%;
+    right: 0;
+}
+
+.videoWrapper object,
+.videoWrapper div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+}
+
+.videoWrapper object,
+.videoWrapper video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+</style>
+
+<!-- SCRIPT PARA ESCONDER CHAT-->
 <script>
 $(document).ready(function() {
     $(".menu-item-parent").click(function() {
         $(".display-users").toggle();
     });
-
 });
+
 </script>
-<!-- <script> -->
-<!--  $(".display-users").width(200); -->
-<!-- </script> -->
 <!-- SmartChat UI : plugin -->
 <script src="js/smart-chat-ui/smart.chat.ui.min.js"></script>
 <script src="js/smart-chat-ui/smart.chat.manager.min.js"></script>
-
-<!-- END OF CHAT -->
-
-<style>
-.peerVideoContainer {
-    position: relative;
-    width: 200px;
-    height: 150px;
-
-}
-
-.peerVideoContainer video {
-    position: absolute;
-    left: 350%;
-    top: 0%;
-    width: 100%;
-    height: 100%;
-}
-
-.VideoContainer {
-    position: relative;
-    width: 200px;
-    height: 150px;
-}
-
-.videoContainer video {
-    position: absolute;
-}
-</style>
-
 <script src="/js/rtc/simplewebrtc.bundle.js"></script>
-
 <script>
+//Pasando el parámetro localVideoEl levanta automáticamente tu video en contenedor que se llame con el nombre asignado al parámetro
+
 var webrtc = new SimpleWebRTC({
     // the id/element dom element that will hold "our" video
     localVideoEl: 'localVideo',
@@ -188,10 +229,18 @@ webrtc.on('readyToCall', function() {
     webrtc.joinRoom('your awesome room name');
 });
 
+//Cuando se conecta un peer
 webrtc.on('videoAdded', function(video, peer) {
+
+    $(document).ready(function() {
+        $("#remoteVideoColumn").show();
+    });
+
+
     console.log('video added', peer);
     var remotes = document.getElementById('remotes');
     if (remotes) {
+
         var container = document.createElement('div');
         container.className = 'peerVideoContainer';
         container.id = 'container_' + webrtc.getDomId(peer);
@@ -206,7 +255,14 @@ webrtc.on('videoAdded', function(video, peer) {
     }
 });
 
+//Cuando se desconecta un peer
 webrtc.on('videoRemoved', function(video, peer) {
+
+    $(document).ready(function() {
+        $("#remoteVideoColumn").hide();
+    });
+
+
     console.log('video removed ', peer);
     var remotes = document.getElementById('remotes');
     var el = document.getElementById(peer ? 'container_' + webrtc.getDomId(peer) : 'localScreenContainer');
@@ -214,57 +270,7 @@ webrtc.on('videoRemoved', function(video, peer) {
         remotes.removeChild(el);
     }
 });
-
-// function showVolume(el, volume) {
-//                if (!el) return;
-//                if (volume < -45) { // vary between -45 and -20
-//                    el.style.height = '0px';
-//                } else if (volume > -20) {
-//                    el.style.height = '100%';
-//                } else {
-//                    el.style.height = '' + Math.floor((volume + 100) * 100 / 25 - 220) + '%';
-//                }
-//            }
-//            webrtc.on('channelMessage', function (peer, label, data) {
-//                if (data.type == 'volume') {
-//                    showVolume(document.getElementById('volume_' + peer.id), data.volume);
-//                }
-//            });
-//            webrtc.on('videoAdded', function (video, peer) {
-//                console.log('video added', peer);
-//                var remotes = document.getElementById('remotes');
-//                if (remotes) {
-//                    var d = document.createElement('div');
-//                    d.className = 'videoContainer';
-//                    d.id = 'container_' + webrtc.getDomId(peer);
-//                    d.appendChild(video);
-//                    var vol = document.createElement('div');
-//                    vol.id = 'volume_' + peer.id;
-//                    vol.className = 'volume_bar';
-//                    video.onclick = function () {
-//                        video.style.width = video.videoWidth + 'px';
-//                        video.style.height = video.videoHeight + 'px';
-//                    };
-//                    d.appendChild(vol);
-//                    remotes.appendChild(d);
-//                }
-//            });
-//             webrtc.on('volumeChange', function (volume, treshold) {
-//                //console.log('own volume', volume);
-//                showVolume(document.getElementById('localVolume'), volume);
-//            });
 </script>
-
-<div class="videoContainer">
-    <video id="localVideo" style="height: 500px;" oncontextmenu="return false;"></video>
-    <div id="localVolume" class="volume_bar"></div>
-</div>
-<div class="container-fluid" id="remotes"></div>
-
-
-
-
-
 <!-- end row -->
 <script type="text/javascript">
 /* DO NOT REMOVE : GLOBAL FUNCTIONS!
