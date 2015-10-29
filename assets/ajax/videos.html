@@ -49,42 +49,75 @@
 	</div>
 
 	<div class="row">
-		<div class="col-xs-12 col-md-6 col-lg-3 ">
+<!--		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 ">
+			<div class="well">
+			    <div style="text-align: center" class="embed-responsive embed-responsive-16by9">
+			        <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
+			    </div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
 			<div class="well">
 			    <div style="text-align: center" class="embed-responsive embed-responsive-16by9">
 			        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
 			    </div>
 			</div>
 		</div>
-		<div class="col-xs-12 col-md-6 col-lg-3">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
 			<div class="well">
 			    <div style="text-align: center" class="embed-responsive embed-responsive-16by9">
 			        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
 			    </div>
 			</div>
 		</div>
-		<div class="col-xs-12 col-md-6 col-lg-3">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
 			<div class="well">
 			    <div style="text-align: center" class="embed-responsive embed-responsive-16by9">
 			        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
 			    </div>
 			</div>
 		</div>
-		<div class="col-xs-12 col-md-6 col-lg-3">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
 			<div class="well">
 			    <div style="text-align: center" class="embed-responsive embed-responsive-16by9">
 			        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
 			    </div>
 			</div>
-		</div>
-		<div class="col-xs-12 col-md-6 col-lg-3">
-			<div class="well">
-			    <div style="text-align: center" class="embed-responsive embed-responsive-16by9">
-			        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
-			    </div>
-			</div>
-		</div>
+		</div> 
     </div>
+-->
+	<div class="col-xs-12" id="videoresults" ></div>
+
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
+			<div class="video-container">
+			        <iframe src="http://www.youtube.com/embed/zpOULjyy-n8" frameborder="0" width="560" height="349"></iframe>
+			</div>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
+			<div class="video-container">
+			        <iframe src="http://www.youtube.com/embed/zpOULjyy-n8" frameborder="0" width="560" height="349"></iframe>
+			</div>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
+			<div class="video-container">
+			        <iframe src="http://www.youtube.com/embed/zpOULjyy-n8" frameborder="0" width="560" height="349"></iframe>
+			</div>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
+			<div class="video-container">
+			        <iframe src="http://www.youtube.com/embed/zpOULjyy-n8" frameborder="0" width="560" height="349"></iframe>
+			</div>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
+			<div class="video-container">
+			        <iframe src="http://www.youtube.com/embed/zpOULjyy-n8" frameborder="0" width="560" height="349"></iframe>
+			</div>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
+			<div class="video-container">
+			        <iframe src="http://www.youtube.com/embed/zpOULjyy-n8" frameborder="0" width="560" height="349"></iframe>
+			</div>
+	</div>
 
 </div>
 
@@ -148,7 +181,7 @@
 	
 	var pagefunction = function() {
 		
-		$('.superbox').SuperBox();
+		//$('.superbox').SuperBox();
 
 	};
 	
@@ -157,7 +190,9 @@
 	// run pagefunction on load
 
 	// load bootstrap-progress bar script
-	loadScript("js/plugin/superbox/superbox.min.js", pagefunction);
+	//loadScript("js/react/components/video/videobox.js", pagefunction);
 
 
 </script>
+
+<script type="text/babel" src="js/react/components/video/videobox.js"></script>
