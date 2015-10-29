@@ -21,8 +21,7 @@
             <div id="containingBlockLocal">
                 <div class="videoWrapper">
                     <object>
-                        <param name="allowscriptaccess" value="always"></param>
-                        <video id="localVideo"></video>
+                        <video id="localVideo" controls></video>
                     </object>
                 </div>
             </div>
@@ -40,16 +39,6 @@
             <!-- FIN VIDEO REMOTO -->
         </div>
         <!-- FIN VIDEO PRINCIPAL -->
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="videoControls">
-            <div class="col-sm-6 col-md-6 col-lg-6 text-align-right">
-                <button class="btn btn-danger btn-xs" id="playpausebtn">Pause</button>
-                <button class="btn btn-danger btn-xs" id="fullscreenbtn">Full Screen</button>
-                <button class="btn btn-danger btn-xs" id="mutebtn">Mute</button>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-6 text-align-right" id="volumebar">
-                <input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
-            </div>
-        </div>
         <!-- CHAT -->
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="chatColumn">
             <div class="main-position">
@@ -166,11 +155,11 @@
 </style>
 <!--ESTILO DE LOS VIDEOS-->
 <style>
+
 #mainVideoColumn {
     height: 70vh;
     width: 70%;
-    border-style: solid;
-    border-color: red;
+    left: 2vh;
 }
 
 #remoteVideoColumn {
@@ -237,7 +226,9 @@ var webrtc = new SimpleWebRTC({
     // the id/element dom element that will hold remote videos
     remoteVideosEl: '',
     // immediately ask for camera access
-    autoRequestMedia: true
+    autoRequestMedia: true,
+
+    mirror: false
 });
 
 // we have to wait until it's ready
@@ -291,15 +282,16 @@ webrtc.on('videoRemoved', function(video, peer) {
 <!--SCRIPT DE FUNCIONES DEL REPRODUCTOR DE VIDEO-->
 <script>
 var vid = document.getElementById("localVideo");
-var fullscreenbtn = document.getElementById("fullscreenbtn");
-var playbtn = document.getElementById("playpausebtn");
-var mutebtn = document.getElementById("mutebtn");
-var volumeslider = document.getElementById("volumeslider");
 
-playbtn.addEventListener("click", playPause, false);
-mutebtn.addEventListener("click", vidmute, false);
-volumeslider.addEventListener("change", setvolume, false);
-fullscreenbtn.addEventListener("click", toggleFullScreen, false);
+// var fullscreenbtn = document.getElementById("fullscreenbtn");
+// var playbtn = document.getElementById("playpausebtn");
+// var mutebtn = document.getElementById("mutebtn");
+// var volumeslider = document.getElementById("volumeslider");
+
+// playbtn.addEventListener("click", playPause, false);
+// mutebtn.addEventListener("click", vidmute, false);
+// volumeslider.addEventListener("change", setvolume, false);
+vid.addEventListener("dblclick", toggleFullScreen, false);
 
 function toggleFullScreen() {
     if (vid.requestFullScreen) {
