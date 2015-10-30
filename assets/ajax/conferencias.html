@@ -40,97 +40,98 @@
         </div>
         <!-- FIN VIDEO PRINCIPAL -->
         <!-- CHAT -->
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="chatColumn">
-            <div class="main-position">
-                <div class="chat-main">
-                    <li class="chat-users top-menu-invisible">
-                        <a><i class="fa fa-lg fa-fw fa-comment-o"><em class="bg-color-black flash animated">!</em></i> <span class="menu-item-parent" style="cursor:pointer">Smart Chat</span></a>
-                        <ul>
-                            <li>
-                                <!-- DISPLAY USERS -->
-                                <div class="display-users">
-                                    <input class="form-control chat-user-filter" placeholder="Filter" type="text">
-                                    <a href="#" class="usr" data-chat-id="cha1" data-chat-fname="Sadi" data-chat-lname="Orlaf" data-chat-status="busy" data-chat-alertmsg="Sadi Orlaf is in a meeting. Please do not disturb!" data-chat-alertshow="true" data-rel="popover-hover" data-placement="left" data-html="true" data-content="
-                                            <div class='usr-card'>
-                                                <img src='img/avatars/5.png' alt='Sadi Orlaf'>
-                                                <div class='usr-card-content'>
-                                                    <h3>Sadi Orlaf</h3>
-                                                    <p>Marketing Executive</p>
-                                                </div>
-                                            </div>
-                                        ">
-                                        <i></i>Sadi Orlaf
-                                    </a>
-                                    <br>
-                                    <br>
-                                    <a href="#" class="usr" data-chat-id="cha2" data-chat-fname="Jessica" data-chat-lname="Dolof" data-chat-status="online" data-chat-alertmsg="" data-chat-alertshow="false" data-rel="popover-hover" data-placement="left" data-html="true" data-content="
-                                            <div class='usr-card'>
-                                                <img src='img/avatars/1.png' alt='Jessica Dolof'>
-                                                <div class='usr-card-content'>
-                                                    <h3>Jessica Dolof</h3>
-                                                    <p>Sales Administrator</p>
-                                                </div>
-                                            </div>
-                                        ">
-                                        <i></i>Jessica Dolof
-                                    </a>
-                                    <br>
-                                    <br>
-                                    <a href="#" class="usr" data-chat-id="cha3" data-chat-fname="Zekarburg" data-chat-lname="Almandalie" data-chat-status="online" data-rel="popover-hover" data-placement="left" data-html="true" data-content="
-                                            <div class='usr-card'>
-                                                <img src='img/avatars/3.png' alt='Zekarburg Almandalie'>
-                                                <div class='usr-card-content'>
-                                                    <h3>Zekarburg Almandalie</h3>
-                                                    <p>Sales Admin</p>
-                                                </div>
-                                            </div>
-                                        ">
-                                        <i></i>Zekarburg Almandalie
-                                    </a>
-                                    <br>
-                                    <br>
-                                    <a href="#" class="usr" data-chat-id="cha4" data-chat-fname="Barley" data-chat-lname="Krazurkth" data-chat-status="away" data-rel="popover-hover" data-placement="left" data-html="true" data-content="
-                                            <div class='usr-card'>
-                                                <img src='img/avatars/4.png' alt='Barley Krazurkth'>
-                                                <div class='usr-card-content'>
-                                                    <h3>Barley Krazurkth</h3>
-                                                    <p>Sales Director</p>
-                                                </div>
-                                            </div>
-                                        ">
-                                        <i></i>Barley Krazurkth
-                                    </a>
-                                    <br>
-                                    <br>
-                                    <a href="#" class="usr offline" data-chat-id="cha5" data-chat-fname="Farhana" data-chat-lname="Amrin" data-chat-status="incognito" data-rel="popover-hover" data-placement="left" data-html="true" data-content="
-                                            <div class='usr-card'>
-                                                <img src='img/avatars/female.png' alt='Farhana Amrin'>
-                                                <div class='usr-card-content'>
-                                                    <h3>Farhana Amrin</h3>
-                                                    <p>Support Admin <small><i class='fa fa-music'></i> Playing Beethoven Classics</small></p>
-                                                </div>
-                                            </div>
-                                        ">
-                                        <i></i>Farhana Amrin (offline)
-                                    </a>
-                                    <br>
-                                    <br>
-                                    <a href="#" class="usr offline" data-chat-id="cha6" data-chat-fname="Lezley" data-chat-lname="Jacob" data-chat-status="incognito" data-rel="popover-hover" data-placement="left" data-html="true" data-content="
-                                            <div class='usr-card'>
-                                                <img src='img/avatars/male.png' alt='Lezley Jacob'>
-                                                <div class='usr-card-content'>
-                                                    <h3>Lezley Jacob</h3>
-                                                    <p>Sales Director</p>
-                                                </div>
-                                            </div>
-                                        ">
-                                        <i></i>Lezley Jacob (offline)
-                                    </a>
-                                </div>
-                                <!-- END DISPLAY USERS -->
-                            </li>
-                        </ul>
-                    </li>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5" id="chatColumn">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-comment"></span> Chat
+                            <div class="btn-group pull-right">
+                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                    <span class="glyphicon glyphicon-chevron-down"></span>
+                                </button>
+                                <ul class="dropdown-menu slidedown">
+                                    <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-refresh">
+                            </span>Refresh</a></li>
+                                    <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-ok-sign">
+                            </span>Available</a></li>
+                                    <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-remove">
+                            </span>Busy</a></li>
+                                    <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-time"></span>
+                                Away</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-off"></span>
+                                Sign Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="chat">
+                                <li class="left clearfix"><span class="chat-img pull-left">
+                           
+                        </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font">Lucas Jaime</strong> <small class="pull-right text-muted">
+                                        <span class="glyphicon glyphicon-time"></span>12 mins ago</small>
+                                        </div>
+                                        <p>
+                                            Ehhh Cabeee, el Locu no quiere venir el sábado
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="right clearfix"><span class="chat-img pull-right">
+
+                           
+                        </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>13 mins ago</small>
+                                            <strong class="pull-right primary-font">El cabe</strong>
+                                        </div>
+                                        <p>
+                                            Por???
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="left clearfix"><span class="chat-img pull-left">
+                            
+                        </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font">Lucas Jaime</strong> <small class="pull-right text-muted">
+                                        <span class="glyphicon glyphicon-time"></span>14 mins ago</small>
+                                        </div>
+                                        <p>
+                                            Porque es locu... llora por todo
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="right clearfix"><span class="chat-img pull-right">
+                            
+                        </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>15 mins ago</small>
+                                            <strong class="pull-right primary-font">El cabe</strong>
+                                        </div>
+                                        <p>
+                                            IIIIIIIIHHHHHHHHHHHHHHHHHHHHHHHHHH
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="input-group">
+                                <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                                <span class="input-group-btn">
+                            <button class="btn btn-info btn-sm" id="btn-chat">
+                                Send</button>
+                        </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -139,23 +140,76 @@
 </div>
 <!--ESTILO DEL CHAT-->
 <style>
-.main-position {
+#chatColumn {
     position: absolute;
+    width: 17%;
     right: 0;
+    height: 60vh;
 }
 
-.chat-main {
-    position: relative;
-    border-style: solid;
-    border-width: 1px;
-    width: 250px;
-    height: 100%;
-    background-color: #2C2C2C;
+.chat {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat li.left .chat-body {
+    margin-left: 15px;
+}
+
+.chat li.right .chat-body {
+    margin-right: 15px;
+}
+
+.chat li .chat-body p {
+    margin: 0;
+    color: #777777;
+}
+
+.panel .slidedown .glyphicon,
+.chat .glyphicon {
+    margin-right: 5px;
+}
+
+.panel-body {
+    overflow-y: scroll;
+    height: 60vh;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #474544;
+    border-color: #474544;
+}
+
+.chat-body {
+    overflow-y: hidden;
+    height: auto;
 }
 </style>
 <!--ESTILO DE LOS VIDEOS-->
 <style>
-
 #mainVideoColumn {
     height: 70vh;
     width: 70%;
@@ -171,13 +225,6 @@
     border-style: solid;
     border-color: red;
     display: none;
-}
-
-#chatColumn {
-    position: absolute;
-    height: 20vh;
-    width: 15%;
-    right: 0;
 }
 
 .videoWrapper object,
@@ -198,7 +245,6 @@
 </style>
 <!-- ESTILO DEL REPRODUCTOR DE VIDEO-->
 <style>
-
 input#volumeslider {
     width: 30%;
     background-color: red;
@@ -213,9 +259,7 @@ $(document).ready(function() {
     });
 });
 </script>
-<!-- SmartChat UI : plugin -->
-<script src="js/smart-chat-ui/smart.chat.ui.min.js"></script>
-<script src="js/smart-chat-ui/smart.chat.manager.min.js"></script>
+
 <script src="/js/rtc/simplewebrtc.bundle.js"></script>
 <script>
 //Pasando el parámetro localVideoEl levanta automáticamente tu video en contenedor que se llame con el nombre asignado al parámetro
