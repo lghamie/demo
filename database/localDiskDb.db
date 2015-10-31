@@ -8,7 +8,8 @@
         "password": "pass",
         "id": 1,
         "createdAt": "2015-10-31T21:19:57.063Z",
-        "updatedAt": "2015-10-31T21:19:57.063Z"
+        "updatedAt": "2015-10-31T22:19:40.241Z",
+        "avatar": "img/avatars/sunny.png"
       },
       {
         "name": "Usuario Prueba",
@@ -17,7 +18,8 @@
         "password": "pass",
         "id": 2,
         "createdAt": "2015-10-31T21:20:35.113Z",
-        "updatedAt": "2015-10-31T21:20:35.113Z"
+        "updatedAt": "2015-10-31T22:19:46.239Z",
+        "avatar": "img/avatars/sunny.png"
       }
     ],
     "video": [
@@ -96,13 +98,18 @@
         "enum": [
           "user",
           "teacher"
-        ]
+        ],
+        "defaultsTo": "user"
       },
       "email": {
         "type": "string"
       },
       "password": {
         "type": "string"
+      },
+      "avatar": {
+        "type": "string",
+        "defaultsTo": "img/avatars/sunny.png"
       },
       "id": {
         "type": "integer",
