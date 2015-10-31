@@ -21,7 +21,7 @@
             <div id="containingBlockLocal">
                 <div class="videoWrapper">
                     <object>
-                        <video id="localVideo" controls></video>
+                        <div id="remotes"></div>
                     </object>
                 </div>
             </div>
@@ -31,7 +31,7 @@
                     <div class="videoWrapper">
                         <object>
                             <param name="allowscriptaccess" value="always"></param>
-                            <div id="remotes"></div>
+                            <video id="localVideo" controls></video>
                         </object>
                     </div>
                 </div>
@@ -294,6 +294,8 @@ webrtc.on('readyToCall', function() {
 
 //Cuando se conecta un peer
 webrtc.on('videoAdded', function(video, peer) {
+
+
 
     console.log('video added', peer);
     var remotes = document.getElementById('remotes');

@@ -1,0 +1,220 @@
+</script>
+<div class="row" id="main-row">
+    <div class="row hidden-mobile">
+        <!-- PAGE HEADER -->
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <h1 class="page-title txt-color-blueDark">
+            <i class="fa-fw fa fa-video-camera"></i> 
+                Conferencias
+        </h1>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-align-right">
+            <div class="page-title">
+                <a href="javascript:void(0);" class="btn btn-default">Upload</a>
+                <a href="javascript:void(0);" class="btn btn-default">Load Library</a>
+            </div>
+        </div>
+        <!-- END OF HEADER -->
+    </div>
+    <div class="row" id="mainDiv">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="confCreateColumn">
+            <input id="conference-name" id="confName" type="text">
+            <button class="btn btn-info btn-sm" id="start-conferencing">Create new Conference</button>
+            <row id="rooms-list" class="visible"></row>
+        </div>
+        <!-- VIDEO PRINCIPAL -->
+        <!-- FIN VIDEO PRINCIPAL -->
+        <!-- CHAT -->
+        <!-- FIN CHAT -->
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="participants"></div>
+    </div>
+</div>
+<!--ESTILO DEL CHAT-->
+<style>
+#chatColumn {
+    position: absolute;
+    right: 0;
+    height: 60vh;
+}
+
+.chat {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat li.left .chat-body {
+    margin-left: 15px;
+}
+
+.chat li.right .chat-body {
+    margin-right: 15px;
+}
+
+.chat li .chat-body p {
+    margin: 0;
+    color: #777777;
+}
+
+.panel {
+    position: absolute;
+    right: 0;
+    width: 260px;
+}
+
+.panel .slidedown .glyphicon,
+.chat .glyphicon {
+    margin-right: 5px;
+}
+
+.panel-body {
+    overflow-y: scroll;
+    height: 60vh;
+    padding: 0;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #474544;
+    border-color: #474544;
+}
+
+.chat-body {
+    overflow-y: hidden;
+    height: auto;
+}
+</style>
+<!--ESTILO DE LOS VIDEOS-->
+<style>
+#participants {
+    height: 70vh;
+    width: 70%;
+    left: 2vh;
+}
+
+#remoteVideoColumn {
+    height: 18vh;
+    width: 20%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-style: solid;
+    border-color: red;
+    display: none;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+}
+
+.videoWrapper object,
+.videoWrapper div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+}
+
+.videoWrapper object,
+.videoWrapper video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+</style>
+<script type="text/javascript">
+/* DO NOT REMOVE : GLOBAL FUNCTIONS!
+ *
+ * pageSetUp(); WILL CALL THE FOLLOWING FUNCTIONS
+ *
+ * // activate tooltips
+ * $("[rel=tooltip]").tooltip();
+ *
+ * // activate popovers
+ * $("[rel=popover]").popover();
+ *
+ * // activate popovers with hover states
+ * $("[rel=popover-hover]").popover({ trigger: "hover" });
+ *
+ * // activate inline charts
+ * runAllCharts();
+ *
+ * // setup widgets
+ * setup_widgets_desktop();
+ *
+ * // run form elements
+ * runAllForms();
+ *
+ ********************************
+ *
+ * pageSetUp() is needed whenever you load a page.
+ * It initializes and checks for all basic elements of the page
+ * and makes rendering easier.
+ *
+ */
+
+pageSetUp();
+
+/*
+ * ALL PAGE RELATED SCRIPTS CAN GO BELOW HERE
+ * eg alert("my home function");
+ * 
+ * var pagefunction = function() {
+ *   ...
+ * }
+ * loadScript("js/plugin/_PLUGIN_NAME_.js", pagefunction);
+ * 
+ * TO LOAD A SCRIPT:
+ * var pagefunction = function (){ 
+ *  loadScript(".../plugin.js", run_after_loaded);  
+ * }
+ * 
+ * OR
+ * 
+ * loadScript(".../plugin.js", run_after_loaded);
+ */
+
+// PAGE RELATED SCRIPTS
+
+// pagefunction
+
+var pagefunction = function() {
+
+    $('.superbox').SuperBox();
+
+};
+
+// end pagefunction
+
+// run pagefunction on load
+
+// load bootstrap-progress bar script
+loadScript("js/plugin/superbox/superbox.min.js", pagefunction);
+</script>
