@@ -1,0 +1,96 @@
+{
+  "data": {
+    "video": [
+      {
+        "url": "http://www.youtube.com/embed/UarTohemlhs",
+        "title": "Palladium Hotel",
+        "id": 1,
+        "createdAt": "2015-10-28T01:13:10.618Z",
+        "updatedAt": "2015-10-30T03:11:29.055Z"
+      },
+      {
+        "url": "http://www.youtube.com/embed/UarTohemlhs",
+        "title": "video2",
+        "id": 2,
+        "createdAt": "2015-10-29T23:50:17.695Z",
+        "updatedAt": "2015-10-29T23:50:17.695Z"
+      },
+      {
+        "url": "http://www.youtube.com/embed/UarTohemlhs",
+        "title": "Hotel Palladium",
+        "id": 3,
+        "createdAt": "2015-10-30T03:59:40.354Z",
+        "updatedAt": "2015-10-30T03:59:40.354Z"
+      },
+      {
+        "url": "http://www.youtube.com/embed/UarTohemlhs",
+        "title": "Hotel Palladium",
+        "id": 4,
+        "createdAt": "2015-10-30T03:59:42.666Z",
+        "updatedAt": "2015-10-30T03:59:42.666Z"
+      },
+      {
+        "url": "http://www.youtube.com/embed/UarTohemlhs",
+        "title": "Hotel Palladium",
+        "id": 5,
+        "createdAt": "2015-10-30T03:59:44.555Z",
+        "updatedAt": "2015-10-30T03:59:44.555Z"
+      },
+      {
+        "url": "http://www.youtube.com/embed/UarTohemlhs",
+        "title": "Hotel Palladium",
+        "id": 6,
+        "createdAt": "2015-10-30T03:59:45.497Z",
+        "updatedAt": "2015-10-30T03:59:45.497Z"
+      },
+      {
+        "url": "http://www.youtube.com/embed/UarTohemlhs",
+        "title": "Hotel Palladium",
+        "id": 7,
+        "createdAt": "2015-10-30T03:59:46.243Z",
+        "updatedAt": "2015-10-30T03:59:46.243Z"
+      },
+      {
+        "url": "http://www.youtube.com/embed/UarTohemlhs",
+        "title": "Hotel Palladium",
+        "id": 8,
+        "createdAt": "2015-10-30T03:59:47.320Z",
+        "updatedAt": "2015-10-30T03:59:47.320Z"
+      },
+      {
+        "url": "http://www.youtube.com/embed/UarTohemlhs",
+        "title": "Hotel Palladium",
+        "id": 9,
+        "createdAt": "2015-10-30T03:59:49.627Z",
+        "updatedAt": "2015-10-30T03:59:49.627Z"
+      }
+    ]
+  },
+  "schema": {
+    "video": {
+      "url": {
+        "type": "string"
+      },
+      "title": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "video": {
+      "id": 9
+    }
+  }
+}
