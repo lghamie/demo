@@ -15,7 +15,8 @@ module.exports = {
   	type: {
       type: 'string',
       enum: ['user', 'teacher'],
-      required: true
+      required: true,
+      defaultsTo: 'user',
   	},
   	email: {
       type: 'email',
@@ -25,6 +26,10 @@ module.exports = {
       type: 'string',
       required: true
   	},
+    avatar : {
+      type: 'string',
+      defaultsTo: "img/avatars/sunny.png"
+    },
     toJSON: function() {
         var obj = this.toObject();
         delete obj.password;
