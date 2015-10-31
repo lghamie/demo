@@ -445,6 +445,12 @@ var pagefunction = function() {
 
 };
 
+var pagedestroy = function() {
+    webrtc.stopLocalVideo();
+    webrtc.leaveRoom();
+    
+};
+
 // end pagefunction
 
 // run pagefunction on load

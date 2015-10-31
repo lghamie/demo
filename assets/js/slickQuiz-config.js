@@ -5,7 +5,7 @@
 var quizJSON = {
     "info": {
         "name":    "Cuestionario pendiente 2",
-        "main":    "<p>Cuestionario acerca del tema visto el dia 11/11/2015</p>",
+        "main":    "Cuestionario acerca del tema visto el dia 11/11/2015",
         "results": "<h5>Mas informacion</h5><p>Para mas informacion acerca de este cuestionario consulte www.estapagina.com/textos</p>",
         "level1":  "Perfecto",
         "level2":  "Muy bien",
