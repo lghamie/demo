@@ -165,7 +165,11 @@
 
 				<!-- logout button -->
 				<div id="logout" class="btn-header transparent pull-right">
-					<span> <a href="/logout" title="Cerrar Sesion" data-action="userLogout" data-logout-msg="You can improve your security further after logging out by closing this opened browser"><i class="fa fa-sign-out"></i></a> </span>
+<<<<<<< HEAD
+					<span> <a href="/logout" title="Sign Out" data-action="userLogout" data-logout-msg="You can improve your security further after logging out by closing this opened browser"><i class="fa fa-sign-out"></i></a> </span>
+=======
+					<span> <a href="login.html" title="Cerrar Sesion" data-action="userLogout" data-logout-msg="Se cerrara la sesion en curso"><i class="fa fa-sign-out"></i></a> </span>
+>>>>>>> 23b52f26d1840e2c164b9118d93f4fdb0100e975
 				</div>
 				<!-- end logout button -->
 
@@ -218,9 +222,9 @@
 			<div class="login-info">
 				<span> <!-- User image size is adjusted inside CSS, it should stay as is --> 
 					<a href="#ajax/profile.html">
-						<img src=<%= req.session.user.avatar%> alt="me" class="online" /> 
+						<img src="img/avatars/sunny.png" alt="me" class="online" /> 
 						<span>
-							<%= req.session.user.name %> 
+							<%= JSON.stringify(req.session.user.name) %> 
 						</span>
 					</a> 
 					
@@ -266,9 +270,6 @@
 					
 				</ul>
 			</nav>
-
-			
-			<a href="#" class="btn btn-primary nav-demo-btn">Version Demo</a>
 			
 			
 
@@ -372,6 +373,7 @@
 		</div>
 		<!-- END FOOTER -->
 
+		<!-- END SHORTCUT AREA -->
 
 		<!--================================================== -->
 
