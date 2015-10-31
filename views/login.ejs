@@ -105,7 +105,7 @@
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
 						<div class="well no-padding">
-							<form action="index.html" id="login-form" class="smart-form client-form">
+							<form  id="login-form" class="smart-form client-form">
 								<header>
 									Sign In
 								</header>
@@ -136,7 +136,7 @@
 									</section>
 								</fieldset>
 								<footer>
-									<button type="submit" class="btn btn-primary">
+									<button  id="signInButton" class="btn btn-primary">
 										Sign in
 									</button>
 								</footer>
@@ -202,7 +202,25 @@
 
 		<script type="text/javascript">
 			runAllForms();
-
+			$('#login-form').submit(false);
+			$('#signInButton').click( function() {
+				var data = $('#login-form').serialize();
+				$.ajax({
+				  'method': "POST",
+				  'url': '/login',
+				  'data': data,
+				  'success': function(data) {
+			    	console.log("Respuesta", data);
+			    	
+			    	window.location.replace("/");
+			       },
+   				  'error': function(data) {
+			    	console.log("Error", data);
+			       },
+				  'dataType': 'json'
+				});
+			});
+			
 			$(function() {
 				// Validation
 				$("#login-form").validate({
@@ -236,6 +254,7 @@
 					}
 				});
 			});
+			
 		</script>
 
 	</body>

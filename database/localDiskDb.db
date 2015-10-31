@@ -1,5 +1,25 @@
 {
   "data": {
+    "user": [
+      {
+        "name": "Lucas Hamie",
+        "type": "user",
+        "email": "lucas.hamie@gmail.com",
+        "password": "pass",
+        "id": 1,
+        "createdAt": "2015-10-31T21:19:57.063Z",
+        "updatedAt": "2015-10-31T21:19:57.063Z"
+      },
+      {
+        "name": "Usuario Prueba",
+        "type": "user",
+        "email": "demo@gmail.com",
+        "password": "pass",
+        "id": 2,
+        "createdAt": "2015-10-31T21:20:35.113Z",
+        "updatedAt": "2015-10-31T21:20:35.113Z"
+      }
+    ],
     "video": [
       {
         "url": "http://www.youtube.com/embed/UarTohemlhs",
@@ -67,6 +87,36 @@
     ]
   },
   "schema": {
+    "user": {
+      "name": {
+        "type": "string"
+      },
+      "type": {
+        "type": "string",
+        "enum": [
+          "user",
+          "teacher"
+        ]
+      },
+      "email": {
+        "type": "string"
+      },
+      "password": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
     "video": {
       "url": {
         "type": "string"
@@ -91,6 +141,9 @@
   "counters": {
     "video": {
       "id": 9
+    },
+    "user": {
+      "id": 2
     }
   }
 }
