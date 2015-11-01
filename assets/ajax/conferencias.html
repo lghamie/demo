@@ -25,17 +25,6 @@
                     </object>
                 </div>
             </div>
-            <!-- VIDEO REMOTO -->
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="remoteVideoColumn">
-                <div id="containingBlockRemote">
-                    <div class="videoWrapper">
-                        <object>
-                            <param name="allowscriptaccess" value="always"></param>
-                            <div id="remotes"></div>
-                        </object>
-                    </div>
-                </div>
-            </div>
             <!-- FIN VIDEO REMOTO -->
         </div>
         <!-- FIN VIDEO PRINCIPAL -->
@@ -293,26 +282,6 @@ webrtc.on('readyToCall', function() {
     webrtc.joinRoom('room1');
 });
 
-//Cuando se conecta un peer
-webrtc.on('videoAdded', function(video, peer) {
-
-    console.log('video added', peer);
-    var remotes = document.getElementById('remotes');
-    if (remotes) {
-
-        var container = document.createElement('div');
-        container.className = 'peerVideoContainer';
-        container.id = 'container_' + webrtc.getDomId(peer);
-        container.appendChild(video);
-
-        // suppress contextmenu
-        video.oncontextmenu = function() {
-            return false;
-        };
-
-        remotes.appendChild(container);
-    }
-});
 
 //Cuando se desconecta un peer
 webrtc.on('videoRemoved', function(video, peer) {

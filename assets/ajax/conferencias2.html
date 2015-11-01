@@ -171,7 +171,7 @@
     color: #777777;
 }
 
-.panel{
+.panel {
     position: absolute;
     right: 0;
     width: 260px;
@@ -233,9 +233,10 @@
     display: none;
 }
 
-.videoWrapper{
+.videoWrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%;
+    /* 16:9 */
     padding-top: 25px;
 }
 
@@ -282,9 +283,12 @@ var webrtc = new SimpleWebRTC({
     remoteVideosEl: '',
     // immediately ask for camera access
     autoRequestMedia: true,
-
+    audio: false,
+    video: false,
     mirror: false
 });
+
+
 
 // we have to wait until it's ready
 webrtc.on('readyToCall', function() {
@@ -295,7 +299,7 @@ webrtc.on('readyToCall', function() {
 //Cuando se conecta un peer
 webrtc.on('videoAdded', function(video, peer) {
 
-
+    webrtc.mute();
 
     console.log('video added', peer);
     var remotes = document.getElementById('remotes');
@@ -448,7 +452,7 @@ var pagefunction = function() {
 var pagedestroy = function() {
     webrtc.stopLocalVideo();
     webrtc.leaveRoom();
-    
+
 };
 
 // end pagefunction
