@@ -6,20 +6,20 @@
         "type": "user",
         "email": "lucas.hamie@gmail.com",
         "password": "pass",
+        "avatar": "img/avatars/sunny.png",
         "id": 1,
         "createdAt": "2015-10-31T21:19:57.063Z",
-        "updatedAt": "2015-10-31T22:19:40.241Z",
-        "avatar": "img/avatars/sunny.png"
+        "updatedAt": "2015-10-31T22:19:40.241Z"
       },
       {
         "name": "Usuario Prueba",
         "type": "user",
         "email": "demo@gmail.com",
         "password": "pass",
+        "avatar": "img/avatars/sunny.png",
         "id": 2,
         "createdAt": "2015-10-31T21:20:35.113Z",
-        "updatedAt": "2015-10-31T22:19:46.239Z",
-        "avatar": "img/avatars/sunny.png"
+        "updatedAt": "2015-10-31T22:19:46.239Z"
       }
     ],
     "video": [
