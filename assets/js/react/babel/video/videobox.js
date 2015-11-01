@@ -49,7 +49,7 @@ var SearchBar = React.createClass({
                 React.createElement(
                   "a",
                   { href: "javascript:void(0)" },
-                  "Capacitacion"
+                  "Negociación"
                 )
               ),
               React.createElement(
@@ -58,7 +58,7 @@ var SearchBar = React.createClass({
                 React.createElement(
                   "a",
                   { href: "javascript:void(0)" },
-                  "Etc"
+                  "Liderazgo"
                 )
               ),
               React.createElement(
@@ -67,12 +67,12 @@ var SearchBar = React.createClass({
                 React.createElement(
                   "a",
                   { href: "javascript:void(0)" },
-                  "Etc2"
+                  "Ventas"
                 )
               )
             )
           ),
-          React.createElement("input", { className: "form-control input-lg", type: "text", ref: "searchterm", placeholder: "Buscar de nuevo..." }),
+          React.createElement("input", { className: "form-control input-lg", type: "text", ref: "searchterm", placeholder: "Buscar videos..." }),
           React.createElement(
             "div",
             { className: "input-group-btn" },
@@ -177,4 +177,5 @@ $(document).ready(function() {
   );
 });
 */
+ReactDOM.render(React.createElement(SearchableVideoList, { url: "/video" }), document.getElementById('videoresults'));
 console.log("Loaded react resources");

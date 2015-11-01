@@ -25,17 +25,17 @@ var SearchBar = React.createClass({
             </li>
             <li className="divider"></li>
             <li>
-              <a href="javascript:void(0)">Capacitacion</a>
+              <a href="javascript:void(0)">Negociación</a>
             </li>
             <li>
-              <a href="javascript:void(0)">Etc</a>
+              <a href="javascript:void(0)">Liderazgo</a>
             </li>
             <li>
-              <a href="javascript:void(0)">Etc2</a>
+              <a href="javascript:void(0)">Ventas</a>
             </li>
           </ul>
         </div>
-        <input className="form-control input-lg" type="text" ref="searchterm" placeholder="Buscar de nuevo..."/>
+        <input className="form-control input-lg" type="text" ref="searchterm" placeholder="Buscar videos..."/>
         <div className="input-group-btn">
           <button type="submit" className="btn btn-default" >
             &nbsp;&nbsp;&nbsp;<i className="fa fa-fw fa-search fa-lg"></i>&nbsp;&nbsp;&nbsp;
@@ -86,7 +86,7 @@ var SearchableVideoList = React.createClass({
   render: function() {  
     return (
       <div className="searchBar">
-          <SearchBar onSearchTermChange={this.onSearchTermChange}/>
+        <SearchBar onSearchTermChange={this.onSearchTermChange}/>
         <VideoList data={this.state.data} />
     </div>
     );
@@ -116,10 +116,10 @@ var VideoBox = React.createClass({
     return (
       <div className="videoBox" >
         <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3" style={{marginBottom: '20px'}}>
-      <div className="video-container">
-          <iframe src={this.props.url} frameBorder="0" width="560" height="349" ></iframe>
-      </div>
-    </div>
+          <div className="video-container">
+              <iframe src={this.props.url} frameBorder="0" width="560" height="349" ></iframe>
+          </div>
+        </div>
       </div>
     );
   }
