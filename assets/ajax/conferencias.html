@@ -1,354 +1,124 @@
-<div class="row" id="main-row">
-    <div class="row hidden-mobile">
-        <!-- PAGE HEADER -->
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <h1 class="page-title txt-color-blueDark">
-            <i class="fa-fw fa fa-video-camera"></i> 
-                Conferencias
-        </h1>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-align-right">
-            <div class="page-title">
-                <a href="javascript:void(0);" class="btn btn-default">Upload</a>
-                <a href="javascript:void(0);" class="btn btn-default">Load Library</a>
-            </div>
-        </div>
-        <!-- END OF HEADER -->
+<!-- Bread crumb is created dynamically -->
+<!-- row -->
+<div class="row">
+    <!-- col -->
+    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+        <h1 class="page-title txt-color-blueDark"><!-- PAGE HEADER --><i class="fa-fw fa fa-video-camera"></i> Conferencias</h1>
     </div>
-    <div class="row" id="mainDiv">
-        <!-- VIDEO PRINCIPAL -->
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="mainVideoColumn">
-            <div id="containingBlockLocal">
-                <div class="videoWrapper">
-                    <object>
-                        <video id="localVideo" controls></video>
-                    </object>
-                </div>
-            </div>
-            <!-- FIN VIDEO REMOTO -->
+    <!-- end col -->
+</div>
+<!-- end row -->
+<!-- row -->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="well">
+            <thead>
+            </thead>
+            <tbody>
+                <!-- TR -->
+                <tr>
+                    <td class="text-center" style="width: 40px;"><i></i></td>
+                    <td>
+                        <h4><button class="btn btn-info btn-sm" id="btn-create">
+                                Crear</button>
+								<small>Ser el anfitrión de una nueva sala.</small>
+							</h4>
+                </tr>
+                <!-- end TR -->
+            </tbody>
         </div>
-        <!-- FIN VIDEO PRINCIPAL -->
-        <!-- CHAT -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5" id="chatColumn">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <span class="glyphicon glyphicon-comment"></span> Chat
-                            <div class="btn-group pull-right">
-                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                    <span class="glyphicon glyphicon-chevron-down"></span>
-                                </button>
-                                <ul class="dropdown-menu slidedown">
-                                    <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-refresh">
-                            </span>Refresh</a></li>
-                                    <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-ok-sign">
-                            </span>Available</a></li>
-                                    <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-remove">
-                            </span>Busy</a></li>
-                                    <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-time"></span>
-                                Away</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-off"></span>
-                                Sign Out</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="panel-body">
-                            <ul class="chat">
-                                <li class="left clearfix"><span class="chat-img pull-left">
-                           
-                        </span>
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <strong class="primary-font">Lucas Jaime</strong> <small class="pull-right text-muted">
-                                        <span class="glyphicon glyphicon-time"></span>12 mins ago</small>
-                                        </div>
-                                        <p>
-                                            Ehhh Cabeee, el Locu no quiere venir el sábado
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="right clearfix"><span class="chat-img pull-right">
-
-                           
-                        </span>
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>13 mins ago</small>
-                                            <strong class="pull-right primary-font">El cabe</strong>
-                                        </div>
-                                        <p>
-                                            Por???
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="left clearfix"><span class="chat-img pull-left">
-                            
-                        </span>
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <strong class="primary-font">Lucas Jaime</strong> <small class="pull-right text-muted">
-                                        <span class="glyphicon glyphicon-time"></span>14 mins ago</small>
-                                        </div>
-                                        <p>
-                                            Porque es locu... llora por todo
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="right clearfix"><span class="chat-img pull-right">
-                            
-                        </span>
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>15 mins ago</small>
-                                            <strong class="pull-right primary-font">El cabe</strong>
-                                        </div>
-                                        <p>
-                                            IIIIIIIIHHHHHHHHHHHHHHHHHHHHHHHHHH
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="panel-footer">
-                            <div class="input-group">
-                                <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
-                                <span class="input-group-btn">
-                            <button class="btn btn-info btn-sm" id="btn-chat">
-                                Send</button>
-                        </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- FIN CHAT -->
     </div>
 </div>
-<!--ESTILO DEL CHAT-->
-<style>
-#chatColumn {
-    position: absolute;
-    right: 0;
-    height: 60vh;
-}
+<div class="row">
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="well">
+            <table class="table table-striped table-forum">
+                <thead>
+                    <tr>
+                        <th colspan="2">Mis conferencias</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- TR -->
+                    <tr>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Fecha</th>
+                                        <th>Hora inicio</th>
+                                        <th>Hora fin</th>
+                                        <th>Rol</th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Conferencia 1</td>
+                                        <td>22 de Noviembre de 2015</td>
+                                        <td>15:00</td>
+                                        <td>17:00</td>
+                                        <td>Invitado</td>
+                                        <td><a href="#ajax/conferenceGuest.html" class="fa fa-toggle-right" id="join2">Unirse</a></td>
+                                        <td></td>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Conferencia 2</td>
+                                        <td>28 de Noviembre de 2015</td>
+                                        <td>09:00</td>
+                                        <td>12:00</td>
+                                        <td>Anfitrión</td>
+                                        <td><a href="#ajax/conferenceHost.html" class="fa fa-toggle-right" id="join1">Unirse</a></td>
+                                        <td><a href="#" class="fa fa-toggle-right" id="edit1">Editar</a></td>
+                                        <th><a href="#" class="fa fa-toggle-right" id="delete1">Eliminar</a></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Conferencia 2</td>
+                                        <td>28 de Noviembre de 2015</td>
+                                        <td>09:00</td>
+                                        <td>12:00</td>
+                                        <td>Invitado</td>
+                                        <td><a href="#ajax/conferenceGuest.html" class="fa fa-toggle-right" id="join3">Unirse</a></td>
+                                        <td></td>
+                                        <th></th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </tr>
+                    <!-- end TR -->
+                </tbody>
+            </table>
+            </tbody>
+            </table>
+        </div>
+    </div>
+</div>
 
-.chat {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.chat li {
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    border-bottom: 1px dotted #B3A9A9;
-}
-
-.chat li.left .chat-body {
-    margin-left: 15px;
-}
-
-.chat li.right .chat-body {
-    margin-right: 15px;
-}
-
-.chat li .chat-body p {
-    margin: 0;
-    color: #777777;
-}
-
-.panel {
-    position: absolute;
-    right: 0;
-    width: 260px;
-}
-
-.panel .slidedown .glyphicon,
-.chat .glyphicon {
-    margin-right: 5px;
-}
-
-.panel-body {
-    overflow-y: scroll;
-    height: 60vh;
-    padding: 0;
-}
-
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #F5F5F5;
-}
-
-::-webkit-scrollbar {
-    width: 12px;
-    background-color: #F5F5F5;
-}
-
-::-webkit-scrollbar-thumb {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-    background-color: #555;
-}
-
-.panel-primary>.panel-heading {
-    color: #fff;
-    background-color: #474544;
-    border-color: #474544;
-}
-
-.chat-body {
-    overflow-y: hidden;
-    height: auto;
-}
 </style>
-<!--ESTILO DE LOS VIDEOS-->
-<style>
-#mainVideoColumn {
-    height: 70vh;
-    width: 70%;
-    left: 2vh;
-}
 
-#remoteVideoColumn {
-    height: 18vh;
-    width: 20%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    border-style: solid;
-    border-color: red;
-    display: none;
-}
-
-.videoWrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    /* 16:9 */
-    padding-top: 25px;
-}
-
-.videoWrapper object,
-.videoWrapper div {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    right: 0;
-}
-
-.videoWrapper object,
-.videoWrapper video {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-}
-</style>
-<!-- ESTILO DEL REPRODUCTOR DE VIDEO-->
-<style>
-input#volumeslider {
-    width: 30%;
-    background-color: red;
-    color: red;
-}
-</style>
-<!-- SCRIPT PARA ESCONDER CHAT-->
 <script>
-$(document).ready(function() {
-    $(".menu-item-parent").click(function() {
-        $(".display-users").toggle();
-    });
-});
-</script>
-<script src="/js/rtc/simplewebrtc.bundle.js"></script>
-<script>
-//Pasando el parámetro localVideoEl levanta automáticamente tu video en contenedor que se llame con el nombre asignado al parámetro
-
-var webrtc = new SimpleWebRTC({
-    // the id/element dom element that will hold "our" video
-    localVideoEl: 'localVideo',
-    // the id/element dom element that will hold remote videos
-    remoteVideosEl: '',
-    // immediately ask for camera access
-    autoRequestMedia: true,
-
-    mirror: false
-});
-
-// we have to wait until it's ready
-webrtc.on('readyToCall', function() {
-    // you can name it anything
-    webrtc.joinRoom('room1');
+$("#join2").click(function() {
+    var room;
+    window.room = "room2";
 });
 
 
-//Cuando se desconecta un peer
-webrtc.on('videoRemoved', function(video, peer) {
-
-    $(document).ready(function() {
-        $("#remoteVideoColumn").hide();
-    });
-
-
-    console.log('video removed ', peer);
-    var remotes = document.getElementById('remotes');
-    var el = document.getElementById(peer ? 'container_' + webrtc.getDomId(peer) : 'localScreenContainer');
-    if (remotes && el) {
-        remotes.removeChild(el);
-    }
+$("#join1").click(function() {
+    var room;
+    window.room = "room1";
 });
-</script>
-<!--SCRIPT DE FUNCIONES DEL REPRODUCTOR DE VIDEO-->
-<script>
-var vid = document.getElementById("localVideo");
 
-
-// var fullscreenbtn = document.getElementById("fullscreenbtn");
-// var playbtn = document.getElementById("playpausebtn");
-// var mutebtn = document.getElementById("mutebtn");
-// var volumeslider = document.getElementById("volumeslider");
-
-// playbtn.addEventListener("click", playPause, false);
-// mutebtn.addEventListener("click", vidmute, false);
-// volumeslider.addEventListener("change", setvolume, false);
-vid.addEventListener("dblclick", toggleFullScreen, false);
-
-function toggleFullScreen() {
-    if (vid.requestFullScreen) {
-        vid.requestFullScreen();
-    } else if (vid.webkitRequestFullScreen) {
-        vid.webkitRequestFullScreen();
-    } else if (vid.mozRequestFullScreen) {
-        vid.mozRequestFullScreen();
-    }
-}
-
-function playPause() {
-    if (vid.paused) {
-        vid.play();
-        playbtn.innerHTML = "Pause";
-    } else {
-        vid.pause();
-        playbtn.innerHTML = "Play";
-    }
-}
-
-function vidmute() {
-    if (vid.muted) {
-        vid.muted = false;
-        mutebtn.innerHTML = "Mute";
-    } else {
-        vid.muted = true;
-        mutebtn.innerHTML = "Unmute";
-    }
-}
-
-function setvolume() {
-    vid.volume = volumeslider.value / 100;
-}
-
-$('.slider').slider();
+$("#join3").click(function() {
+    var room;
+    window.room = "room1";
+});
 </script>
 <!-- end row -->
 <script type="text/javascript">
@@ -412,12 +182,6 @@ var pagefunction = function() {
     $('.superbox').SuperBox();
 
 };
-var pagedestroy = function() {
-    webrtc.stopLocalVideo();
-    webrtc.leaveRoom();
-    
-};
-
 
 // end pagefunction
 

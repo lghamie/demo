@@ -20,6 +20,16 @@
         "id": 2,
         "createdAt": "2015-10-31T21:20:35.113Z",
         "updatedAt": "2015-10-31T22:19:46.239Z"
+      },
+      {
+        "name": "Juan Ferrari",
+        "type": "teacher",
+        "email": "j@gmail.com",
+        "password": "pass",
+        "avatar": "img/avatars/sunny.png",
+        "id": 3,
+        "createdAt": "2015-10-31T21:20:35.113Z",
+        "updatedAt": "2015-10-31T22:19:46.239Z"
       }
     ],
     "video": [
@@ -150,7 +160,7 @@
       "id": 9
     },
     "user": {
-      "id": 2
+      "id": 3
     }
   }
 }
