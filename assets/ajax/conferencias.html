@@ -3,7 +3,7 @@
 <div class="row">
     <!-- col -->
     <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
-        <h1 class="page-title txt-color-blueDark"><!-- PAGE HEADER --><i class="fa-fw fa fa-video-camera"></i> Conferencias</h1>
+        <h1 class="page-title txt-color-blueDark"><!-- PAGE HEADER --><i class="fa-fw fa fa-video-camera"></i> Cursos Online</h1>
     </div>
     <!-- end col -->
 </div>
@@ -11,7 +11,7 @@
 <!-- row -->
 <div class="row">
     <div class="col-sm-12">
-        <div class="well">
+        <div class="well" id="well1">
             <thead>
             </thead>
             <tbody>
@@ -31,13 +31,14 @@
 </div>
 <div class="row">
 </div>
+<!--TABLA CON MIS CURSOS-->
 <div class="row">
     <div class="col-sm-12">
-        <div class="well">
+        <div class="well" id="well2">
             <table class="table table-striped table-forum">
                 <thead>
                     <tr>
-                        <th colspan="2">Mis conferencias</th>
+                        <th colspan="2">Mis cursos online</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -52,41 +53,44 @@
                                         <th>Hora inicio</th>
                                         <th>Hora fin</th>
                                         <th>Rol</th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Conferencia 1</td>
+                                    <tr id="guest">
+                                        <td>Curso 1</td>
                                         <td>22 de Noviembre de 2015</td>
                                         <td>15:00</td>
                                         <td>17:00</td>
                                         <td>Invitado</td>
                                         <td><a href="#ajax/conferenceGuest.html" class="fa fa-toggle-right" id="join2">Unirse</a></td>
                                         <td></td>
-                                        <th></th>
+                                        <td></td>
+                                        <td> <a href="#ajax/conferenceHost.html" id="info1">+Info
+                                        </a></td>
                                     </tr>
-                                    <tr>
-                                        <td>Conferencia 2</td>
+                                    <tr id="host">
+                                        <td>Curso 2</td>
                                         <td>28 de Noviembre de 2015</td>
                                         <td>09:00</td>
                                         <td>12:00</td>
                                         <td>Anfitrión</td>
                                         <td><a href="#ajax/conferenceHost.html" class="fa fa-toggle-right" id="join1">Unirse</a></td>
                                         <td><a href="#" class="fa fa-toggle-right" id="edit1">Editar</a></td>
-                                        <th><a href="#" class="fa fa-toggle-right" id="delete1">Eliminar</a></th>
+                                        <td><a href="#" class="fa fa-trash-o" id="delete1">Eliminar</a></td>
+                                        <td> <a href="#ajax/conferenceHost.html" id="info1">+Info
+                                        </a></td>
                                     </tr>
-                                    <tr>
-                                        <td>Conferencia 2</td>
+                                    <tr id="guest">
+                                        <td>Curso 2</td>
                                         <td>28 de Noviembre de 2015</td>
                                         <td>09:00</td>
                                         <td>12:00</td>
                                         <td>Invitado</td>
                                         <td><a href="#ajax/conferenceGuest.html" class="fa fa-toggle-right" id="join3">Unirse</a></td>
                                         <td></td>
-                                        <th></th>
+                                        <td></td>
+                                        <td> <a href="#ajax/conferenceHost.html" id="info1">+Info
+                                        </a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -100,24 +104,104 @@
         </div>
     </div>
 </div>
+<!-- FIN TABLA CON MIS CURSOS-->
+<!--TABLA CON MAS CURSOS-->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="well" id="well3">
+            <table class="table table-striped table-forum">
+                <thead>
+                    <tr>
+                        <th colspan="2">Más cursos en vivo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- TR -->
+                    <tr>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Hora inicio</th>
+                                        <th>Hora fin</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Curso 3</td>
+                                        <td>15:00</td>
+                                        <td>17:00</td>
+                                        <td><a href="#ajax/conferenceGuest.html" class="fa fa-toggle-right" id="join2">Unirse</a></td>
+                                        <td> <a href="#ajax/conferenceHost.html" id="info1">+Info
+                                        </a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Curso 4</td>
+                                        <td>09:00</td>
+                                        <td>12:00</td>
+                                        <td><a href="#ajax/conferenceHost.html" class="fa fa-toggle-right" id="join1">Unirse</a></td>
+                                        <td> <a href="#ajax/conferenceHost.html" id="info1">+Info
+                                        </a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Curso 5</td>
+                                        <td>09:00</td>
+                                        <td>12:00</td>
+                                        <td><a href="#ajax/conferenceGuest.html" class="fa fa-toggle-right" id="join3">Unirse</a></td>
+                                        <td> <a href="#ajax/conferenceHost.html" id="info1">+Info
+                                        </a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </tr>
+                    <!-- end TR -->
+                </tbody>
+            </table>
+            </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- FIN TABLA CON MAS CURSOS-->
+<style>
+#well1,
+#well2,
+#well3 {
+    background-color: #F6FAFF;
+}
 
+#host {
+    background-color: #FFB2B2;
+}
+
+#guest {
+    background-color: #DDFFDD;
+}
 </style>
-
 <script>
+var room;
+var roomname;
+var role;
+
 $("#join2").click(function() {
-    var room;
+
     window.room = "room2";
+    window.roomname = "Curso 1";
 });
 
 
 $("#join1").click(function() {
-    var room;
+
     window.room = "room1";
+    window.roomname = "Curso 2";
 });
 
 $("#join3").click(function() {
-    var room;
+
     window.room = "room1";
+    window.roomname = "Curso 2";
 });
 </script>
 <!-- end row -->

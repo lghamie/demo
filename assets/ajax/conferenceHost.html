@@ -3,12 +3,12 @@
         <!-- PAGE HEADER -->
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <h1 class="page-title txt-color-blueDark">
-            <i class="fa-fw fa fa-video-camera"></i> 
-                Conferencias
-        </h1>
+            <i class="fa-fw fa fa-video-camera"></i>            
+            <i id="pagetitle"></i>     
+            </h1>
         </div>
         <!-- END OF HEADER -->
-         <!-- CHAT -->
+        <!-- CHAT -->
         <div class="container">
             <div class="row">
                 <div class="hidden-md col-md-6" id="chatColumn">
@@ -247,6 +247,14 @@ input#volumeslider {
     color: red;
 }
 </style>
+
+
+<!-- SCRIPT CON VARIABLES -->
+<script>
+$('#pagetitle').html(window.roomname);
+</script>
+
+
 <!-- SCRIPT PARA ESCONDER CHAT-->
 <script>
 $(document).ready(function() {
@@ -341,8 +349,6 @@ function vidmute() {
 function setvolume() {
     vid.volume = volumeslider.value / 100;
 }
-
-$('.slider').slider();
 </script>
 <!-- end row -->
 <script type="text/javascript">
@@ -409,7 +415,7 @@ var pagefunction = function() {
 var pagedestroy = function() {
     webrtc.stopLocalVideo();
     webrtc.leaveRoom();
-    
+
 };
 
 
