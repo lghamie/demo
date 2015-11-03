@@ -208,6 +208,7 @@
                     .replace('%name', quizValues.info.name) ).fadeIn(1000, kN(key,1));
                 $quizHeader.hide().prepend($('<div class="row"><div class="col-md-10 col-xs-12"><div class="quizDescription well">' + quizValues.info.main + '</div></div><div class="col-md-2 col-xs-12"><div class="well"><div id="getting-started" style="text-align: center;"></div></div></div></div>')).fadeIn(1000, kN(key,2));
                 $quizResultsCopy.append(quizValues.info.results);
+                $quizResultsCopy.append('<a class="button btn btn-default" href="#ajax/evaluaciones.html">Volver a lista de evaluaciones</a>');
 
                 // add retry button to results view, if enabled
                 if (plugin.config.tryAgainText && plugin.config.tryAgainText !== '') {
