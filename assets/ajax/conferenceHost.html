@@ -264,6 +264,11 @@ $(document).ready(function() {
 });
 </script>
 <script src="/js/rtc/simplewebrtc.bundle.js"></script>
+
+<script>
+$(".page-footer").hide();
+</script>
+
 <script>
 //Pasando el parámetro localVideoEl levanta automáticamente tu video en contenedor que se llame con el nombre asignado al parámetro
 
@@ -415,6 +420,7 @@ var pagefunction = function() {
 var pagedestroy = function() {
     webrtc.stopLocalVideo();
     webrtc.leaveRoom();
+    $(".page-footer").show();
 
 };
 
