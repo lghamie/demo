@@ -1,0 +1,151 @@
+<article class="col-sm-12 col-md-12 col-lg-6">
+    <div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-3" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false">
+        <!-- widget options:
+				usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+
+				data-widget-colorbutton="false"
+				data-widget-editbutton="false"
+				data-widget-togglebutton="false"
+				data-widget-deletebutton="false"
+				data-widget-fullscreenbutton="false"
+				data-widget-custombutton="false"
+				data-widget-collapsed="true"
+				data-widget-sortable="false"
+
+				-->
+        <header>
+            <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+            <h2>Cear</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+            <!-- widget edit box -->
+            <div class="jarviswidget-editbox">
+                <!-- This area used as dropdown edit box -->
+            </div>
+            <!-- end widget edit box -->
+            <!-- widget content -->
+            <div class="widget-body no-padding">
+                <form action="" class="smart-form">
+                    <header>
+                        Creación de un nuevo curso
+                    </header>
+                    <fieldset>
+                        <section>
+                            <label class="input"> <i class="icon-append fa fa-question-circle"></i>
+                                <input type="text" placeholder="Nombre del curso">
+                                <b class="tooltip tooltip-top-right">
+											<i class="fa fa-warning txt-color-teal"></i> 
+											Es necesario ingresar un nombre para el curso</b>
+                            </label>
+                        </section>
+                        <section>
+                            <label class="input"> <i class="icon-append fa fa-question-circle"></i>
+                                <input type="text" placeholder="Categoría">
+                                <b class="tooltip tooltip-bottom-right">
+											<i class="fa fa-warning txt-color-teal"></i> 
+											Some helpful information</b>
+                            </label>
+                        </section>
+                        <section>
+                            <label class="select">
+                                <select class="selectpicker"> <i class="icon-append fa fa-question-circle"></i>
+                                    <option value="0">Seleccionar participantes</option>
+                                    <option value="1">Alexandra</option>
+                                    <option value="2">Alice</option>
+                                    <option value="3">Anastasia</option>
+                                    <option value="4">Avelina</option>
+                                </select> <i></i> </label>
+                        </section>
+                        <br>
+                        <section>
+                            <label>Participantes seleccionados:</label>
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item">Thomas</a>
+                                    <a href="#" class="list-group-item">Mark</a>
+                                    <a href="#" class="list-group-item">Ralph</a>
+                                </div>
+                            </label>
+                        </section>
+                        <selection>
+                            <a class="btn btn-info btn-sm pull-right" href="#" id="create-btn">Crear</a>
+                        </selection>
+                    </fieldset>
+                </form>
+            </div>
+            <!-- end widget content -->
+        </div>
+        <!-- end widget div -->
+    </div>
+    <!-- end widget -->
+</article>
+<!-- end row -->
+<script type="text/javascript">
+/* DO NOT REMOVE : GLOBAL FUNCTIONS!
+ *
+ * pageSetUp(); WILL CALL THE FOLLOWING FUNCTIONS
+ *
+ * // activate tooltips
+ * $("[rel=tooltip]").tooltip();
+ *
+ * // activate popovers
+ * $("[rel=popover]").popover();
+ *
+ * // activate popovers with hover states
+ * $("[rel=popover-hover]").popover({ trigger: "hover" });
+ *
+ * // activate inline charts
+ * runAllCharts();
+ *
+ * // setup widgets
+ * setup_widgets_desktop();
+ *
+ * // run form elements
+ * runAllForms();
+ *
+ ********************************
+ *
+ * pageSetUp() is needed whenever you load a page.
+ * It initializes and checks for all basic elements of the page
+ * and makes rendering easier.
+ *
+ */
+
+pageSetUp();
+
+/*
+ * ALL PAGE RELATED SCRIPTS CAN GO BELOW HERE
+ * eg alert("my home function");
+ * 
+ * var pagefunction = function() {
+ *   ...
+ * }
+ * loadScript("js/plugin/_PLUGIN_NAME_.js", pagefunction);
+ * 
+ * TO LOAD A SCRIPT:
+ * var pagefunction = function (){ 
+ *  loadScript(".../plugin.js", run_after_loaded);  
+ * }
+ * 
+ * OR
+ * 
+ * loadScript(".../plugin.js", run_after_loaded);
+ */
+
+// PAGE RELATED SCRIPTS
+
+// pagefunction
+
+var pagefunction = function() {
+
+    $('.superbox').SuperBox();
+
+};
+
+// end pagefunction
+
+// run pagefunction on load
+
+// load bootstrap-progress bar script
+loadScript("js/plugin/superbox/superbox.min.js", pagefunction);
+</script>
