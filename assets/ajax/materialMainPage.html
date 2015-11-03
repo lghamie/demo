@@ -17,6 +17,41 @@
 </div>
 <!-- end row -->
 
+<div class="SearchBar row" onSubmit={this.handleSubmit}>
+    <div class="col-sm-12" style={{marginBottom: '20px'}}>
+      <div class="input-group input-group-lg hidden-mobile">
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Todo <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li class="active">
+              <a href="javascript:void(0)"><i class="fa fa-check"></i> Todo</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="javascript:void(0)">Negociación</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">Liderazgo</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">Ventas</a>
+            </li>
+          </ul>
+        </div>
+        <input class="form-control input-lg" type="text" ref="searchterm" placeholder="Buscar material..."/>
+        <div class="input-group-btn">
+          <button type="submit" class="btn btn-default" >
+            &nbsp;&nbsp;&nbsp;<i class="fa fa-fw fa-search fa-lg"></i>&nbsp;&nbsp;&nbsp;
+          </button>
+        </div>
+      </div>  
+    </div>
+  </div>
+
+<br>
+
 <div class="row">
 
 	<div class="col-sm-9">
@@ -67,7 +102,7 @@
 						El liderazgo es el conjunto de habilidades gerenciales o directivas que un individuo tiene para influir en la forma de ser de las personas o en un grupo de personas determinado, haciendo que este equipo trabaje con entusiasmo, en el logro de metas y objetivos. La motivación implica estados internos que dirigen el organismo hacia metas o fines determinados; son los impulsos que mueven a la persona a realizar determinadas acciones y persistir en ellas para su culminación
 						
 					</p>
-					<a class="btn btn-primary" href="#ajax/materialLiderazgo.htlm;"> Ver mas </a>
+					<a class="btn btn-primary" href="#ajax/materialLiderazgo.html"> Ver mas </a>
 				</div>
 			</div>
 			<hr>
@@ -120,7 +155,7 @@
 
 							
 					</p>
-					<a class="btn btn-primary" href="ajax/materialtecnicasDeVentas.html;"> Ver mas</a>
+					<a class="btn btn-primary" href="#ajax/materialTecnicasVentas.html"> Ver mas</a>
 				</div>
 			</div>	
 
