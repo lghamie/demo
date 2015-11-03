@@ -35,12 +35,13 @@
 <div class="row">
     <div class="col-sm-12">
         <div class="well" id="well2">
-            <table class="table table-striped table-forum">
-                <thead>
-                    <tr>
-                        <th colspan="2">Mis cursos online</th>
-                    </tr>
-                </thead>
+            <div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-0" data-widget-editbutton="false">
+                <header>
+                    <span class="widget-icon"> <i class="fa fa-lg fa-calendar"></i> </span>
+                    <h2>Mis cursos pendientes</h2>
+                </header>
+            </div>
+            <table class="table table-striped table-forum" id="table1">
                 <tbody>
                     <!-- TR -->
                     <tr>
@@ -109,16 +110,17 @@
 <div class="row">
     <div class="col-sm-12">
         <div class="well" id="well3">
-            <table class="table table-striped table-forum">
-                <thead>
-                    <tr>
-                        <th colspan="2">Más cursos en vivo</th>
-                    </tr>
-                </thead>
+            <div class="jarviswidget jarviswidget-color-orange" id="wid-id-0" data-widget-editbutton="false">
+                <header>
+                    <span class="widget-icon"> <i class="fa fa-lg fa-calendar"></i> </span>
+                    <h2>Más cursos que se están dictanto en este momento..</h2>
+                </header>
+            </div>
+            <table class="table table-striped table-forum" id="table1">
                 <tbody>
                     <!-- TR -->
                     <tr>
-                        <div class="table-responsive">
+                        <div class="table-responsive" >
                             <table class="table table-bordered table-striped">
                                 <thead>
                                     <tr>
@@ -166,6 +168,11 @@
 </div>
 <!-- FIN TABLA CON MAS CURSOS-->
 <style>
+#table1 {
+    position: absolute;
+    top: 0;
+}
+
 #well1,
 #well2,
 #well3 {
