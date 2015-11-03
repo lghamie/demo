@@ -44,10 +44,38 @@
                                 <input type="text" placeholder="Categoría">
                                 <b class="tooltip tooltip-bottom-right">
 											<i class="fa fa-warning txt-color-teal"></i> 
-											Some helpful information</b>
+											Elegir la categoría a la que pertenecerá el curso</b>
                             </label>
                         </section>
                         <section>
+                            <label class="input"> <i class="icon-append fa fa-question-circle"></i>
+                                <input type="date" placeholder="Fecha">
+                                <b class="tooltip tooltip-bottom-right">
+											<i class="fa fa-warning txt-color-teal"></i> 
+											Elegir la fecha</b>
+                            </label>
+                        </section>
+                        <selection>
+                            <label class="input">
+                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                    <label type "text">Hora inicio</label>
+                                    <input type="time" placeholder="hora1">
+                                    <b class="tooltip tooltip-bottom-right">
+											Elegir hora de inicio</b>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                    <label type "text">Hora fin</label>
+                                    <input type="time" placeholder="hora2">
+                                    <b class="tooltip tooltip-bottom-right">
+								    <i class="fa fa-warning txt-color-teal"></i> 
+											Elegir hora de fin</b>
+                                </div>
+                            </label>
+                        </selection>
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <selection>
                             <label class="select">
                                 <select class="selectpicker"> <i class="icon-append fa fa-question-circle"></i>
                                     <option value="0">Seleccionar participantes</option>
@@ -56,15 +84,14 @@
                                     <option value="3">Anastasia</option>
                                     <option value="4">Avelina</option>
                                 </select> <i></i> </label>
-                        </section>
+                        </selection>
                         <br>
                         <section>
                             <label>Participantes seleccionados:</label>
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item">Thomas</a>
-                                    <a href="#" class="list-group-item">Mark</a>
-                                    <a href="#" class="list-group-item">Ralph</a>
-                                </div>
+                            <div class="list-group">
+                                <button type="button" class="list-group-item">Thomas</button>
+                                <button type="button" class="list-group-item">Mark</button>
+                            </div>
                             </label>
                         </section>
                         <selection>
@@ -80,6 +107,8 @@
     <!-- end widget -->
 </article>
 <!-- end row -->
+<script>
+</script>
 <script type="text/javascript">
 /* DO NOT REMOVE : GLOBAL FUNCTIONS!
  *
