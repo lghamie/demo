@@ -1,6 +1,14 @@
-<article class="col-sm-12 col-md-12 col-lg-6">
-    <div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-3" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false">
-        <!-- widget options:
+<div class="row">
+    <!-- PAGE HEADER -->
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">           
+            <h1>Administración de cursos</h1>
+    </div>
+    <!-- END OF HEADER -->
+</div>
+<div class="row">
+    <article class="col-sm-12 col-md-12 col-lg-6">
+        <div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-3" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false">
+            <!-- widget options:
 				usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
 
 				data-widget-colorbutton="false"
@@ -13,100 +21,101 @@
 				data-widget-sortable="false"
 
 				-->
-        <header>
-            <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
-            <h2>Cear</h2>
-        </header>
-        <!-- widget div-->
-        <div>
-            <!-- widget edit box -->
-            <div class="jarviswidget-editbox">
-                <!-- This area used as dropdown edit box -->
-            </div>
-            <!-- end widget edit box -->
-            <!-- widget content -->
-            <div class="widget-body no-padding">
-                <form action="" class="smart-form">
-                    <header>
-                        Creación de un nuevo curso
-                    </header>
-                    <fieldset>
-                        <section>
-                            <label class="input"> <i class="icon-append fa fa-question-circle"></i>
-                                <input type="text" placeholder="Nombre del curso">
-                                <b class="tooltip tooltip-top-right">
+            <header>
+                <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+                <h2>Cear</h2>
+            </header>
+            <!-- widget div-->
+            <div>
+                <!-- widget edit box -->
+                <div class="jarviswidget-editbox">
+                    <!-- This area used as dropdown edit box -->
+                </div>
+                <!-- end widget edit box -->
+                <!-- widget content -->
+                <div class="widget-body no-padding">
+                    <form action="" class="smart-form">
+                        <header>
+                            Creación de un nuevo curso
+                        </header>
+                        <fieldset>
+                            <section>
+                                <label class="input"> <i class="icon-append fa fa-question-circle"></i>
+                                    <input type="text" placeholder="Nombre del curso">
+                                    <b class="tooltip tooltip-top-right">
 											<i class="fa fa-warning txt-color-teal"></i> 
 											Es necesario ingresar un nombre para el curso</b>
-                            </label>
-                        </section>
-                        <section>
-                            <label class="input"> <i class="icon-append fa fa-question-circle"></i>
-                                <input type="text" placeholder="Categoría">
-                                <b class="tooltip tooltip-bottom-right">
+                                </label>
+                            </section>
+                            <section>
+                                <label class="input"> <i class="icon-append fa fa-question-circle"></i>
+                                    <input type="text" placeholder="Categoría">
+                                    <b class="tooltip tooltip-bottom-right">
 											<i class="fa fa-warning txt-color-teal"></i> 
 											Elegir la categoría a la que pertenecerá el curso</b>
-                            </label>
-                        </section>
-                        <section>
-                            <label class="input"> <i class="icon-append fa fa-question-circle"></i>
-                                <input type="date" placeholder="Fecha">
-                                <b class="tooltip tooltip-bottom-right">
+                                </label>
+                            </section>
+                            <section>
+                                <label class="input"> <i class="icon-append fa fa-question-circle"></i>
+                                    <input type="date" placeholder="Fecha">
+                                    <b class="tooltip tooltip-bottom-right">
 											<i class="fa fa-warning txt-color-teal"></i> 
 											Elegir la fecha</b>
-                            </label>
-                        </section>
-                        <selection>
-                            <label class="input">
-                                <div class="col-sm-12 col-md-12 col-lg-6">
-                                    <label type "text">Hora inicio</label>
-                                    <input type="time" placeholder="hora1">
-                                    <b class="tooltip tooltip-bottom-right">
+                                </label>
+                            </section>
+                            <selection>
+                                <label class="input">
+                                    <div class="col-sm-12 col-md-12 col-lg-6">
+                                        <label type "text">Hora inicio</label>
+                                        <input type="time" placeholder="hora1">
+                                        <b class="tooltip tooltip-bottom-right">
 											Elegir hora de inicio</b>
-                                </div>
-                                <div class="col-sm-12 col-md-12 col-lg-6">
-                                    <label type "text">Hora fin</label>
-                                    <input type="time" placeholder="hora2">
-                                    <b class="tooltip tooltip-bottom-right">
+                                    </div>
+                                    <div class="col-sm-12 col-md-12 col-lg-6">
+                                        <label type "text">Hora fin</label>
+                                        <input type="time" placeholder="hora2">
+                                        <b class="tooltip tooltip-bottom-right">
 								    <i class="fa fa-warning txt-color-teal"></i> 
 											Elegir hora de fin</b>
+                                    </div>
+                                </label>
+                            </selection>
+                            <br>
+                        </fieldset>
+                        <fieldset>
+                            <selection>
+                                <label class="select">
+                                    <select class="selectpicker"> <i class="icon-append fa fa-question-circle"></i>
+                                        <option value="0">Seleccionar participantes</option>
+                                        <option value="1">Alexandra</option>
+                                        <option value="2">Alice</option>
+                                        <option value="3">Anastasia</option>
+                                        <option value="4">Avelina</option>
+                                    </select> <i></i> </label>
+                            </selection>
+                            <br>
+                            <section>
+                                <label>Participantes seleccionados:</label>
+                                <div class="list-group">
+                                    <button type="button" class="list-group-item">Thomas</button>
+                                    <button type="button" class="list-group-item">Mark</button>
                                 </div>
-                            </label>
-                        </selection>
-                        <br>
-                    </fieldset>
-                    <fieldset>
-                        <selection>
-                            <label class="select">
-                                <select class="selectpicker"> <i class="icon-append fa fa-question-circle"></i>
-                                    <option value="0">Seleccionar participantes</option>
-                                    <option value="1">Alexandra</option>
-                                    <option value="2">Alice</option>
-                                    <option value="3">Anastasia</option>
-                                    <option value="4">Avelina</option>
-                                </select> <i></i> </label>
-                        </selection>
-                        <br>
-                        <section>
-                            <label>Participantes seleccionados:</label>
-                            <div class="list-group">
-                                <button type="button" class="list-group-item">Thomas</button>
-                                <button type="button" class="list-group-item">Mark</button>
-                            </div>
-                            </label>
-                        </section>
-                        <selection>
-                            <a class="btn btn-info btn-sm pull-right" href="#" id="create-btn">Crear</a>
-                        </selection>
-                    </fieldset>
-                </form>
+                                </label>
+                            </section>
+                            <selection>
+                                <a class="btn btn-info btn-sm pull-right" href="#" id="create-btn">Crear</a>
+                            </selection>
+                        </fieldset>
+                    </form>
+                </div>
+                <!-- end widget content -->
             </div>
-            <!-- end widget content -->
+            <!-- end widget div -->
         </div>
-        <!-- end widget div -->
-    </div>
-    <!-- end widget -->
-</article>
-<!-- end row -->
+        <!-- end widget -->
+    </article>
+    <!-- end row -->
+</div>
 <script>
 </script>
 <script type="text/javascript">
