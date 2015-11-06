@@ -16,7 +16,7 @@ var SearchBar = React.createClass({
       { className: "SearchBar row", onSubmit: this.handleSubmit },
       React.createElement(
         "div",
-        { className: "col-sm-12", style: { marginBottom: '20px' } },
+        { className: "col-xs-12", style: { marginBottom: '20px' } },
         React.createElement(
           "div",
           { className: "input-group input-group-lg hidden-mobile" },

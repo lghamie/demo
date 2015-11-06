@@ -13,7 +13,7 @@ var SearchBar = React.createClass({
   render: function() {
     return (
   <form className="SearchBar row" onSubmit={this.handleSubmit}>
-    <div className="col-sm-12" style={{marginBottom: '20px'}}>
+    <div className="col-xs-12" style={{marginBottom: '20px'}}>
       <div className="input-group input-group-lg hidden-mobile">
         <div className="input-group-btn">
           <button type="button" className="btn btn-default dropdown-toggle" data-toggle="dropdown">
