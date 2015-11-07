@@ -1,124 +1,114 @@
-<div class="row" id="main-row">
-    <div class="row hidden-mobile">
-        <!-- PAGE HEADER -->
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <h1 class="page-title txt-color-blueDark">
+<div class="row hidden-mobile">
+    <!-- PAGE HEADER -->
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <h1 class="page-title txt-color-blueDark">
             <i class="fa-fw fa fa-video-camera"></i>            
             <h id="pagetitle"></h>     
             </h1>
-        </div>
-        <!-- END OF HEADER -->
-        <!-- CHAT -->
+    </div>
+</div>
+<!-- END OF HEADER -->
+<div class="row" id="main-row">
+    <!-- CHAT -->
+    <div class="hidden-md hidden-xs hidden-sm" id="chatColumn">
         <div class="container">
-            <div class="row">
-                <div class="hidden-md hidden-sx col-md-6" id="chatColumn">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <span class="glyphicon glyphicon-comment"></span> Chat
-                            <div class="btn-group pull-right">
-                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                    <span class="glyphicon glyphicon-chevron-down"></span>
-                                </button>
-                                <ul class="dropdown-menu slidedown">
-                                    <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-refresh">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-comment"></span> Chat
+                    <div class="btn-group pull-right">
+                        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </button>
+                        <ul class="dropdown-menu slidedown">
+                            <li><a href="#"><span class="glyphicon glyphicon-refresh">
                             </span>Refresh</a></li>
-                                    <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-ok-sign">
+                            <li><a href="#"><span class="glyphicon glyphicon-ok-sign">
                             </span>Available</a></li>
-                                    <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-remove">
+                            <li><a href="#"><span class="glyphicon glyphicon-remove">
                             </span>Busy</a></li>
-                                    <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-time"></span>
+                            <li><a href="#"><span class="glyphicon glyphicon-time"></span>
                                 Away</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-off"></span>
-                                Sign Out</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="panel-body">
-                            <ul class="chat">
-                                <li class="left clearfix"><span class="chat-img pull-left">
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <ul class="chat">
+                        <li class="left clearfix"><span class="chat-img pull-left">
                            
                         </span>
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <strong class="primary-font">Horacio Gonzales</strong> <small class="pull-right text-muted">
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <strong class="primary-font">Horacio Gonzales</strong> <small class="pull-right text-muted">
                                         <span class="glyphicon glyphicon-time"></span>12 mins ago</small>
-                                        </div>
-                                        <p>
-                                            Hola, soy Horacio Gonzales y soy gerente de ventas. Si tienen alguna pregunta no duden en consultarme.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="right clearfix"><span class="chat-img pull-right">
+                                </div>
+                                <p>
+                                    Hola, soy Horacio Gonzales y soy gerente de ventas. Si tienen alguna pregunta no duden en consultarme.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="right clearfix"><span class="chat-img pull-right">
 
                            
                         </span>
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>13 mins ago</small>
-                                            <strong class="pull-right primary-font">Martín Pérez</strong>
-                                        </div>
-                                        <p>
-                                            Hola Horacio, tengo dudas respecto al tema dos.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="left clearfix"><span class="chat-img pull-left">
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>13 mins ago</small>
+                                    <strong class="pull-right primary-font">Martín Pérez</strong>
+                                </div>
+                                <p>
+                                    Hola Horacio, tengo dudas respecto al tema dos.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="left clearfix"><span class="chat-img pull-left">
                             
                         </span>
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <strong class="primary-font">Horacio Gonzales</strong> <small class="pull-right text-muted">
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <strong class="primary-font">Horacio Gonzales</strong> <small class="pull-right text-muted">
                                         <span class="glyphicon glyphicon-time"></span>14 mins ago</small>
-                                        </div>
-                                        <p>
-                                            Dime Martín. ¿Qué necesitas saber?
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="panel-footer">
-                            <div class="input-group">
-                                <input id="btn-input" type="text" class="form-control input-sm" placeholder="Escribe tu mensaje aquí..." />
-                                <span class="input-group-btn">
+                                </div>
+                                <p>
+                                    Dime Martín. ¿Qué necesitas saber?
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-footer">
+                    <div class="input-group">
+                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Escribe tu mensaje aquí..." />
+                        <span class="input-group-btn">
                             <button class="btn btn-info btn-sm" id="btn-chat">
                                 Enviar</button>
                         </span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- FIN CHAT -->
-        <!-- END OF HEADER -->
     </div>
-    <div class="row" id="mainDiv">
-        <!-- VIDEO PRINCIPAL -->
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="mainVideoColumn">
-            <div id="containingBlockLocal">
-                <div class="videoWrapper">
-                    <object>
-                        <div id="remotes"></div>
-                    </object>
-                </div>
+    <!-- FIN CHAT -->
+    <!-- VIDEO PRINCIPAL -->
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="mainVideoColumn">
+        <div id="containingBlockLocal">
+            <div class="videoWrapper">
+                <object>
+                    <div id="remotes"></div>
+                </object>
             </div>
-            <!-- VIDEO REMOTO -->
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="remoteVideoColumn">
-                <div id="containingBlockRemote">
-                    <div class="videoWrapper">
-                        <object>
-                            <param name="allowscriptaccess" value="always"></param>
-                            <video id="localVideo" controls></video>
-                        </object>
-                    </div>
-                </div>
-            </div>
-            <!-- FIN VIDEO REMOTO -->
         </div>
-        <!-- FIN VIDEO PRINCIPAL -->
     </div>
+    <!-- FIN VIDEO PRINCIPAL -->
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="remoteVideoColumn">
+        <div id="containingBlockRemote">
+            <div class="videoWrapper">
+                <object>
+                    <video id="localVideo" controls></video>
+                </object>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 <!--ESTILO DEL CHAT-->
 <style>
@@ -126,6 +116,7 @@
     position: absolute;
     right: 0;
     height: 100%;
+    top: 2px;
 }
 
 .chat {
@@ -247,11 +238,9 @@ input#volumeslider {
     color: red;
 }
 </style>
-<!-- SCRIPT CON VARIABLES -->
 <script>
 $('#pagetitle').html(window.roomname);
 </script>
-<!-- SCRIPT PARA ESCONDER CHAT-->
 <script>
 $(document).ready(function() {
     $(".menu-item-parent").click(function() {
@@ -265,7 +254,6 @@ $(".page-footer").hide();
 </script>
 <script>
 //Pasando el parámetro localVideoEl levanta automáticamente tu video en contenedor que se llame con el nombre asignado al parámetro
-
 var webrtc = new SimpleWebRTC({
     // the id/element dom element that will hold "our" video
     localVideoEl: 'localVideo',
@@ -277,50 +265,34 @@ var webrtc = new SimpleWebRTC({
     video: false,
     mirror: false
 });
-
-
-
 // we have to wait until it's ready
 webrtc.on('readyToCall', function() {
     // you can name it anything
     webrtc.joinRoom(window.room);
 });
-
 //Cuando se conecta un peer
 webrtc.on('videoAdded', function(video, peer) {
-
     webrtc.mute();
-
     console.log('video added', peer);
     var remotes = document.getElementById('remotes');
     if (remotes) {
-
         var container = document.createElement('div');
         container.className = 'peerVideoContainer';
         container.id = 'container_' + webrtc.getDomId(peer);
         container.appendChild(video);
-
         // suppress contextmenu
         video.oncontextmenu = function() {
             return false;
         };
-
         remotes.appendChild(container);
     }
-
-
     $('#remotes div').slice(1).remove();
-
 });
-
 //Cuando se desconecta un peer
 webrtc.on('videoRemoved', function(video, peer) {
-
     $(document).ready(function() {
         $("#remoteVideoColumn").hide();
     });
-
-
     console.log('video removed ', peer);
     var remotes = document.getElementById('remotes');
     var el = document.getElementById(peer ? 'container_' + webrtc.getDomId(peer) : 'localScreenContainer');
@@ -332,17 +304,13 @@ webrtc.on('videoRemoved', function(video, peer) {
 <!--SCRIPT DE FUNCIONES DEL REPRODUCTOR DE VIDEO-->
 <script>
 var vid = document.getElementById("localVideo");
-
-
 // var fullscreenbtn = document.getElementById("fullscreenbtn");
 // var playbtn = document.getElementById("playpausebtn");
 // var mutebtn = document.getElementById("mutebtn");
 // var volumeslider = document.getElementById("volumeslider");
-
 // playbtn.addEventListener("click", playPause, false);
 // mutebtn.addEventListener("click", vidmute, false);
 // volumeslider.addEventListener("change", setvolume, false);
-
 vid.addEventListener("dblclick", toggleFullScreen, false);
 
 function toggleFullScreen() {
@@ -378,7 +346,6 @@ function vidmute() {
 function setvolume() {
     vid.volume = volumeslider.value / 100;
 }
-
 $('.slider').slider();
 </script>
 <!-- end row -->
@@ -412,9 +379,7 @@ $('.slider').slider();
  * and makes rendering easier.
  *
  */
-
 pageSetUp();
-
 /*
  * ALL PAGE RELATED SCRIPTS CAN GO BELOW HERE
  * eg alert("my home function");
@@ -433,28 +398,17 @@ pageSetUp();
  * 
  * loadScript(".../plugin.js", run_after_loaded);
  */
-
 // PAGE RELATED SCRIPTS
-
 // pagefunction
-
 var pagefunction = function() {
-
     $('.superbox').SuperBox();
-
 };
-
 var pagedestroy = function() {
     webrtc.stopLocalVideo();
     webrtc.leaveRoom();
-    $(".page-footer").show();
-
 };
-
 // end pagefunction
-
 // run pagefunction on load
-
 // load bootstrap-progress bar script
 loadScript("js/plugin/superbox/superbox.min.js", pagefunction);
 </script>
