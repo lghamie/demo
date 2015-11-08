@@ -54,8 +54,9 @@ var SearchableVideoList = React.createClass({
   },
   requestServer: function (titleSearch){
 
-    var queryUrl = this.props.url + '?';
+    var queryUrl = this.props.url;
     if(titleSearch){
+      queryUrl += '?'
       queryUrl += 'where={"or" :[ ';
       var searchTermsArray = titleSearch.split(" ");
       for(var searchTerm in searchTermsArray){
@@ -117,7 +118,7 @@ var VideoBox = React.createClass({
       <div className="videoBox" >
         <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3" style={{marginBottom: '20px'}}>
           <div className="video-container">
-              <iframe src={this.props.url} frameBorder="0" width="560" height="349" ></iframe>
+              <iframe src={this.props.url} frameBorder="0" width="560" height="349" allowFullScreen></iframe>
           </div>
         </div>
       </div>

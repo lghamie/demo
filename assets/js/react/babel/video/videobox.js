@@ -96,8 +96,9 @@ var SearchableVideoList = React.createClass({
   },
   requestServer: function (titleSearch) {
 
-    var queryUrl = this.props.url + '?';
+    var queryUrl = this.props.url;
     if (titleSearch) {
+      queryUrl += '?';
       queryUrl += 'where={"or" :[ ';
       var searchTermsArray = titleSearch.split(" ");
       for (var searchTerm in searchTermsArray) {
@@ -162,7 +163,7 @@ var VideoBox = React.createClass({
         React.createElement(
           "div",
           { className: "video-container" },
-          React.createElement("iframe", { src: this.props.url, frameBorder: "0", width: "560", height: "349" })
+          React.createElement("iframe", { src: this.props.url, frameBorder: "0", width: "560", height: "349", allowFullScreen: true })
         )
       )
     );

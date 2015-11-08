@@ -41,60 +41,53 @@
         "updatedAt": "2015-10-30T03:11:29.055Z"
       },
       {
-        "url": "http://www.youtube.com/embed/UarTohemlhs",
-        "title": "video2",
-        "id": 2,
-        "createdAt": "2015-10-29T23:50:17.695Z",
-        "updatedAt": "2015-10-29T23:50:17.695Z"
+        "url": "https://www.youtube.com/embed/KAa-vadYuzA",
+        "title": "Video de Capacitacion para Meseros",
+        "id": 10,
+        "createdAt": "2015-11-08T15:08:14.780Z",
+        "updatedAt": "2015-11-08T15:08:14.780Z"
       },
       {
-        "url": "http://www.youtube.com/embed/UarTohemlhs",
-        "title": "Hotel Palladium",
-        "id": 3,
-        "createdAt": "2015-10-30T03:59:40.354Z",
-        "updatedAt": "2015-10-30T03:59:40.354Z"
+        "url": "https://www.youtube.com/embed/HxWClwgf66Q",
+        "title": "Video de Capacitación sobre Seguridad para Empleados de Cleveland Construction",
+        "id": 11,
+        "createdAt": "2015-11-08T15:08:31.227Z",
+        "updatedAt": "2015-11-08T15:08:31.227Z"
       },
       {
-        "url": "http://www.youtube.com/embed/UarTohemlhs",
-        "title": "Hotel Palladium",
-        "id": 4,
-        "createdAt": "2015-10-30T03:59:42.666Z",
-        "updatedAt": "2015-10-30T03:59:42.666Z"
+        "url": "https://www.youtube.com/embed/7preoaTzjNk",
+        "title": "Capacitacion y desarrollo del Personal",
+        "id": 12,
+        "createdAt": "2015-11-08T15:08:41.295Z",
+        "updatedAt": "2015-11-08T15:08:41.295Z"
       },
       {
-        "url": "http://www.youtube.com/embed/UarTohemlhs",
-        "title": "Hotel Palladium",
-        "id": 5,
-        "createdAt": "2015-10-30T03:59:44.555Z",
-        "updatedAt": "2015-10-30T03:59:44.555Z"
+        "url": "https://www.youtube.com/embed/3BhVMCNBGzM",
+        "title": "Proceso de Capacitación y Desarrollo de RRHH",
+        "id": 13,
+        "createdAt": "2015-11-08T15:08:48.877Z",
+        "updatedAt": "2015-11-08T15:08:48.877Z"
       },
       {
-        "url": "http://www.youtube.com/embed/UarTohemlhs",
-        "title": "Hotel Palladium",
-        "id": 6,
-        "createdAt": "2015-10-30T03:59:45.497Z",
-        "updatedAt": "2015-10-30T03:59:45.497Z"
+        "url": "https://www.youtube.com/embed/WN3KMTSzv-U",
+        "title": "Importancia de la capacitación",
+        "id": 14,
+        "createdAt": "2015-11-08T15:14:10.057Z",
+        "updatedAt": "2015-11-08T15:14:10.057Z"
       },
       {
-        "url": "http://www.youtube.com/embed/UarTohemlhs",
-        "title": "Hotel Palladium",
-        "id": 7,
-        "createdAt": "2015-10-30T03:59:46.243Z",
-        "updatedAt": "2015-10-30T03:59:46.243Z"
+        "url": "https://www.youtube.com/embed/BZiQD296yY8",
+        "title": "Técnicas de Capacitación",
+        "id": 15,
+        "createdAt": "2015-11-08T15:21:25.668Z",
+        "updatedAt": "2015-11-08T15:21:25.668Z"
       },
       {
-        "url": "http://www.youtube.com/embed/UarTohemlhs",
-        "title": "Hotel Palladium",
-        "id": 8,
-        "createdAt": "2015-10-30T03:59:47.320Z",
-        "updatedAt": "2015-10-30T03:59:47.320Z"
-      },
-      {
-        "url": "http://www.youtube.com/embed/UarTohemlhs",
-        "title": "Hotel Palladium",
-        "id": 9,
-        "createdAt": "2015-10-30T03:59:49.627Z",
-        "updatedAt": "2015-10-30T03:59:49.627Z"
+        "url": "https://www.youtube.com/embed/n-w5IG3URWw",
+        "title": "Actitudes para el desarrollo personal",
+        "id": 16,
+        "createdAt": "2015-11-08T15:25:37.621Z",
+        "updatedAt": "2015-11-08T15:25:37.621Z"
       }
     ]
   },
@@ -157,7 +150,7 @@
   },
   "counters": {
     "video": {
-      "id": 9
+      "id": 16
     },
     "user": {
       "id": 3

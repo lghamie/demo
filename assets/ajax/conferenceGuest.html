@@ -1,4 +1,4 @@
-<div class="row hidden-mobile">
+<div class="row">
     <!-- PAGE HEADER -->
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
         <h1 class="page-title txt-color-blueDark">
@@ -6,12 +6,64 @@
             <h id="pagetitle"></h>     
             </h1>
     </div>
+    <!-- right side of the page with the sparkline graphs -->
+    <!-- col -->
+    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-6">
+        <!-- sparks -->
+        <ul id="sparks">
+            <li class="sparks-info">
+                <h5> Viendo <span class="txt-color-blue">171</span></h5>
+                <div class="sparkline txt-color-blue hidden-mobile hidden-md hidden-sm">
+                    110, 150, 170, 180, 140, 175, 200, 190, 187, 171, 157, 146, 171
+                </div>
+            </li>
+            <li class="sparks-info">
+                <h5> Otro valor <span class="txt-color-purple"><i class="fa fa-arrow-circle-up" data-rel="bootstrap-tooltip" title="Increased"></i>&nbsp;45%</span></h5>
+                <div class="sparkline txt-color-purple hidden-mobile hidden-md hidden-sm">
+                    110,150,300,130,400,240,220,310,220,300, 270, 210
+                </div>
+            </li>
+            <li class="sparks-info">
+                <h5> Site Orders <span class="txt-color-greenDark"><i class="fa fa-shopping-cart"></i>&nbsp;2447</span></h5>
+                <div class="sparkline txt-color-greenDark hidden-mobile hidden-md hidden-sm">
+                    110,150,300,130,400,240,220,310,220,300, 270, 210
+                </div>
+            </li>
+        </ul>
+        <!-- end sparks -->
+    </div>
+    <!-- end col -->
 </div>
 <!-- END OF HEADER -->
 <div class="row" id="main-row">
+    <!-- VIDEO PRINCIPAL -->
+    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9" id="mainVideoColumn">
+        <div class="alert alert-block alert-success"><button class="close">×</button>
+            <h4 class="alert-heading"><i class="fa fa-check-square-o"></i> Bienvenido!</h4>
+            <p>Aquí se pueden mostrar la descripcion del curso y citar material a leer previo a la realizacion del curso. </p>
+        </div>
+        <div id="containingBlockLocal">
+            <div class="videoWrapper">
+                <object>
+                    <div id="remotes"></div>
+                </object>
+            </div>
+        </div>
+    </div>
+    <!-- FIN VIDEO PRINCIPAL -->
+    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9" id="remoteVideoColumn">
+        <div id="containingBlockRemote">
+            <div class="videoWrapper">
+                <object>
+                    <video id="localVideo" controls></video>
+                </object>
+            </div>
+        </div>
+    </div>
+
     <!-- CHAT -->
-    <div class="hidden-md hidden-xs hidden-sm" id="chatColumn">
-        <div class="container">
+    <div class="col-lg-3 col-md-3  hidden-xs hidden-sm" id="chatColumn">
+       <!-- <div class="container"> -->
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     <span class="glyphicon glyphicon-comment"></span> Chat
@@ -85,44 +137,25 @@
                     </div>
                 </div>
             </div>
-        </div>
+        <!-- </div> -->
     </div>
     <!-- FIN CHAT -->
-    <!-- VIDEO PRINCIPAL -->
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="mainVideoColumn">
-        <div id="containingBlockLocal">
-            <div class="videoWrapper">
-                <object>
-                    <div id="remotes"></div>
-                </object>
-            </div>
-        </div>
-    </div>
-    <!-- FIN VIDEO PRINCIPAL -->
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="remoteVideoColumn">
-        <div id="containingBlockRemote">
-            <div class="videoWrapper">
-                <object>
-                    <video id="localVideo" controls></video>
-                </object>
-            </div>
-        </div>
-    </div>
+
 </div>
 </div>
 <!--ESTILO DEL CHAT-->
 <style>
 #chatColumn {
-    position: absolute;
+    /*position: absolute;
     right: 0;
     height: 100%;
-    top: 2px;
+    top: 2px;*/
 }
 
 .chat {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0;*
 }
 
 .chat li {
@@ -145,10 +178,10 @@
 }
 
 .panel {
-    position: absolute;
+    /*position: absolute;
     right: 0;
     top: 0;
-    width: 255px;
+    width: 255px;*/
 }
 
 .panel .slidedown .glyphicon,
@@ -192,8 +225,8 @@
 <style>
 #mainVideoColumn {
     height: 70vh;
-    width: 70%;
-    left: 2vh;
+   /*width: 70%;*/
+   /* left: 2vh;*/
 }
 
 #remoteVideoColumn {
@@ -217,7 +250,7 @@
 .videoWrapper object,
 .videoWrapper div {
     position: absolute;
-    width: 100%;
+    /*width: 100%;*/
     height: 100%;
     right: 0;
 }
@@ -239,19 +272,15 @@ input#volumeslider {
 }
 </style>
 <script>
-$('#pagetitle').html(window.roomname);
-</script>
-<script>
 $(document).ready(function() {
     $(".menu-item-parent").click(function() {
         $(".display-users").toggle();
     });
+    $('#pagetitle').html(window.roomname);
+    $(".page-footer").hide();
 });
 </script>
 <script src="/js/rtc/simplewebrtc.bundle.js"></script>
-<script>
-$(".page-footer").hide();
-</script>
 <script>
 //Pasando el parámetro localVideoEl levanta automáticamente tu video en contenedor que se llame con el nombre asignado al parámetro
 var webrtc = new SimpleWebRTC({
