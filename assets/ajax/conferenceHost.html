@@ -1,4 +1,4 @@
-<div class="row hidden-mobile">
+<div class="row">
     <!-- PAGE HEADER -->
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
         <h1 class="page-title txt-color-blueDark">
@@ -6,91 +6,44 @@
             <h id="pagetitle"></h>     
             </h1>
     </div>
+    <!-- right side of the page with the sparkline graphs -->
+    <!-- col -->
+    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-6">
+        <!-- sparks -->
+        <ul id="sparks">
+            <li class="sparks-info">
+                <h5> Viendo <span class="txt-color-blue">171</span></h5>
+                <div class="sparkline txt-color-blue hidden-mobile hidden-md hidden-sm">
+                    110, 150, 170, 180, 140, 175, 200, 190, 187, 171, 157, 146, 171
+                </div>
+            </li>
+            <li class="sparks-info">
+                <h5> Otro valor <span class="txt-color-purple"><i class="fa fa-arrow-circle-up" data-rel="bootstrap-tooltip" title="Increased"></i>&nbsp;45%</span></h5>
+                <div class="sparkline txt-color-purple hidden-mobile hidden-md hidden-sm">
+                    110,150,300,130,400,240,220,310,220,300, 270, 210
+                </div>
+            </li>
+            <li class="sparks-info">
+                <h5> Site Orders <span class="txt-color-greenDark"><i class="fa fa-shopping-cart"></i>&nbsp;2447</span></h5>
+                <div class="sparkline txt-color-greenDark hidden-mobile hidden-md hidden-sm">
+                    110,150,300,130,400,240,220,310,220,300, 270, 210
+                </div>
+            </li>
+        </ul>
+        <!-- end sparks -->
+    </div>
+    <!-- end col -->
 </div>
 <!-- END OF HEADER -->
 <div class="row" id="main-row">
-    <!-- CHAT -->
-    <div class="hidden-md hidden-xs hidden-sm" id="chatColumn">
-        <div class="container">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <span class="glyphicon glyphicon-comment"></span> Chat
-                    <div class="btn-group pull-right">
-                        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                            <span class="glyphicon glyphicon-chevron-down"></span>
-                        </button>
-                        <ul class="dropdown-menu slidedown">
-                            <li><a href="#"><span class="glyphicon glyphicon-refresh">
-                            </span>Refresh</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-ok-sign">
-                            </span>Available</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-remove">
-                            </span>Busy</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-time"></span>
-                                Away</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="panel-body">
-                    <ul class="chat">
-                        <li class="left clearfix"><span class="chat-img pull-left">
-                           
-                        </span>
-                            <div class="chat-body clearfix">
-                                <div class="header">
-                                    <strong class="primary-font">Horacio Gonzales</strong> <small class="pull-right text-muted">
-                                        <span class="glyphicon glyphicon-time"></span>12 mins ago</small>
-                                </div>
-                                <p>
-                                    Hola, soy Horacio Gonzales y soy gerente de ventas. Si tienen alguna pregunta no duden en consultarme.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="right clearfix"><span class="chat-img pull-right">
-
-                           
-                        </span>
-                            <div class="chat-body clearfix">
-                                <div class="header">
-                                    <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>13 mins ago</small>
-                                    <strong class="pull-right primary-font">Martín Pérez</strong>
-                                </div>
-                                <p>
-                                    Hola Horacio, tengo dudas respecto al tema dos.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="left clearfix"><span class="chat-img pull-left">
-                            
-                        </span>
-                            <div class="chat-body clearfix">
-                                <div class="header">
-                                    <strong class="primary-font">Horacio Gonzales</strong> <small class="pull-right text-muted">
-                                        <span class="glyphicon glyphicon-time"></span>14 mins ago</small>
-                                </div>
-                                <p>
-                                    Dime Martín. ¿Qué necesitas saber?
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="panel-footer">
-                    <div class="input-group">
-                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Escribe tu mensaje aquí..." />
-                        <span class="input-group-btn">
-                            <button class="btn btn-info btn-sm" id="btn-chat">
-                                Enviar</button>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- FIN CHAT -->
     <!-- VIDEO PRINCIPAL -->
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="mainVideoColumn">
-        <div id="containingBlockLocal">
+    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9" id="mainVideoColumn">
+        <div class="alert alert-block alert-success">
+            <button class="close">×</button>
+            <h4 class="alert-heading"><i class="fa fa-check-square-o"></i> Bienvenido!</h4>
+            <p>Aquí se pueden mostrar la descripcion del curso y citar material a leer previo a la realizacion del curso. </p>
+        </div>
+        <div id="containingBlockRemote">
             <div class="videoWrapper">
                 <object>
                     <video id="localVideo" controls></video>
@@ -99,20 +52,101 @@
         </div>
     </div>
     <!-- FIN VIDEO PRINCIPAL -->
+    <!-- CHAT -->
+    <div class="col-lg-3 col-md-3  hidden-xs hidden-sm" id="chatColumn">
+        <!-- <div class="container"> -->
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <span class="glyphicon glyphicon-comment"></span> Chat
+                <div class="btn-group pull-right">
+                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </button>
+                    <ul class="dropdown-menu slidedown">
+                        <li><a href="#"><span class="glyphicon glyphicon-refresh">
+                            </span>Refresh</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-ok-sign">
+                            </span>Available</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-remove">
+                            </span>Busy</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-time"></span>
+                                Away</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel-body">
+                <ul class="chat">
+                    <li class="left clearfix"><span class="chat-img pull-left">
+                           
+                        </span>
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Horacio Gonzales</strong> <small class="pull-right text-muted">
+                                        <span class="glyphicon glyphicon-time"></span>12 mins ago</small>
+                            </div>
+                            <p>
+                                Hola, soy Horacio Gonzales y soy gerente de ventas. Si tienen alguna pregunta no duden en consultarme.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="right clearfix"><span class="chat-img pull-right">
+
+                           
+                        </span>
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>13 mins ago</small>
+                                <strong class="pull-right primary-font">Martín Pérez</strong>
+                            </div>
+                            <p>
+                                Hola Horacio, tengo dudas respecto al tema dos.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="left clearfix"><span class="chat-img pull-left">
+                            
+                        </span>
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Horacio Gonzales</strong> <small class="pull-right text-muted">
+                                        <span class="glyphicon glyphicon-time"></span>14 mins ago</small>
+                            </div>
+                            <p>
+                                Dime Martín. ¿Qué necesitas saber?
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="panel-footer">
+                <div class="input-group">
+                    <input id="btn-input" type="text" class="form-control input-sm" placeholder="Escribe tu mensaje aquí..." />
+                    <span class="input-group-btn">
+                            <button class="btn btn-info btn-sm" id="btn-chat">
+                                Enviar</button>
+                        </span>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+    <!-- FIN CHAT -->
+</div>
 </div>
 <!--ESTILO DEL CHAT-->
 <style>
 #chatColumn {
-    position: absolute;
+    /*position: absolute;
     right: 0;
     height: 100%;
-    top: 2px;
+    top: 2px;*/
 }
 
 .chat {
     list-style: none;
     margin: 0;
     padding: 0;
+    *
 }
 
 .chat li {
@@ -135,10 +169,10 @@
 }
 
 .panel {
-    position: absolute;
+    /*position: absolute;
     right: 0;
     top: 0;
-    width: 255px;
+    width: 255px;*/
 }
 
 .panel .slidedown .glyphicon,
@@ -182,19 +216,8 @@
 <style>
 #mainVideoColumn {
     height: 70vh;
-    width: 70%;
-    left: 2vh;
-}
-
-#remoteVideoColumn {
-    height: 18vh;
-    width: 20%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    border-style: solid;
-    border-color: red;
-    display: none;
+    /*width: 70%;*/
+    /* left: 2vh;*/
 }
 
 .videoWrapper {
@@ -207,7 +230,7 @@
 .videoWrapper object,
 .videoWrapper div {
     position: absolute;
-    width: 100%;
+    /*width: 100%;*/
     height: 100%;
     right: 0;
 }
@@ -220,116 +243,8 @@
     background-color: black;
 }
 </style>
-<!-- ESTILO DEL REPRODUCTOR DE VIDEO-->
-<style>
-input#volumeslider {
-    width: 30%;
-    background-color: red;
-    color: red;
-}
 </style>
-<!-- SCRIPT CON VARIABLES -->
-<script>
-$('#pagetitle').html(window.roomname);
-</script>
-<!-- SCRIPT PARA ESCONDER CHAT-->
-<script>
-$(document).ready(function() {
-    $(".menu-item-parent").click(function() {
-        $(".display-users").toggle();
-    });
-});
-</script>
 <script src="/js/rtc/simplewebrtc.bundle.js"></script>
-<script>
-$(".page-footer").hide();
-</script>
-<script>
-//Pasando el parámetro localVideoEl levanta automáticamente tu video en contenedor que se llame con el nombre asignado al parámetro
-
-var webrtc = new SimpleWebRTC({
-    // the id/element dom element that will hold "our" video
-    localVideoEl: 'localVideo',
-    // the id/element dom element that will hold remote videos
-    remoteVideosEl: '',
-    // immediately ask for camera access
-    autoRequestMedia: true,
-
-    mirror: false
-});
-
-// we have to wait until it's ready
-webrtc.on('readyToCall', function() {
-    // you can name it anything
-    webrtc.joinRoom(window.room);
-});
-
-
-//Cuando se desconecta un peer
-webrtc.on('videoRemoved', function(video, peer) {
-
-    $(document).ready(function() {
-        $("#remoteVideoColumn").hide();
-    });
-
-
-    console.log('video removed ', peer);
-    var remotes = document.getElementById('remotes');
-    var el = document.getElementById(peer ? 'container_' + webrtc.getDomId(peer) : 'localScreenContainer');
-    if (remotes && el) {
-        remotes.removeChild(el);
-    }
-});
-</script>
-<!--SCRIPT DE FUNCIONES DEL REPRODUCTOR DE VIDEO-->
-<script>
-var vid = document.getElementById("localVideo");
-
-
-// var fullscreenbtn = document.getElementById("fullscreenbtn");
-// var playbtn = document.getElementById("playpausebtn");
-// var mutebtn = document.getElementById("mutebtn");
-// var volumeslider = document.getElementById("volumeslider");
-
-// playbtn.addEventListener("click", playPause, false);
-// mutebtn.addEventListener("click", vidmute, false);
-// volumeslider.addEventListener("change", setvolume, false);
-vid.addEventListener("dblclick", toggleFullScreen, false);
-
-function toggleFullScreen() {
-    if (vid.requestFullScreen) {
-        vid.requestFullScreen();
-    } else if (vid.webkitRequestFullScreen) {
-        vid.webkitRequestFullScreen();
-    } else if (vid.mozRequestFullScreen) {
-        vid.mozRequestFullScreen();
-    }
-}
-
-function playPause() {
-    if (vid.paused) {
-        vid.play();
-        playbtn.innerHTML = "Pause";
-    } else {
-        vid.pause();
-        playbtn.innerHTML = "Play";
-    }
-}
-
-function vidmute() {
-    if (vid.muted) {
-        vid.muted = false;
-        mutebtn.innerHTML = "Mute";
-    } else {
-        vid.muted = true;
-        mutebtn.innerHTML = "Unmute";
-    }
-}
-
-function setvolume() {
-    vid.volume = volumeslider.value / 100;
-}
-</script>
 <!-- end row -->
 <script type="text/javascript">
 /* DO NOT REMOVE : GLOBAL FUNCTIONS!
@@ -390,6 +305,93 @@ pageSetUp();
 var pagefunction = function() {
 
     $('.superbox').SuperBox();
+
+    $('#pagetitle').html(window.roomname);
+
+    $(".page-footer").hide();
+
+    //Pasando el parámetro localVideoEl levanta automáticamente tu video en contenedor que se llame con el nombre asignado al parámetro
+
+    var webrtc = new SimpleWebRTC({
+        // the id/element dom element that will hold "our" video
+        localVideoEl: 'localVideo',
+        // the id/element dom element that will hold remote videos
+        remoteVideosEl: '',
+        // immediately ask for camera access
+        autoRequestMedia: true,
+
+        mirror: false
+    });
+
+    // we have to wait until it's ready
+    webrtc.on('readyToCall', function() {
+        // you can name it anything
+        webrtc.joinRoom(window.room);
+    });
+
+
+    //Cuando se desconecta un peer
+    webrtc.on('videoRemoved', function(video, peer) {
+
+        $(document).ready(function() {
+            $("#remoteVideoColumn").hide();
+        });
+
+
+        console.log('video removed ', peer);
+        var remotes = document.getElementById('remotes');
+        var el = document.getElementById(peer ? 'container_' + webrtc.getDomId(peer) : 'localScreenContainer');
+        if (remotes && el) {
+            remotes.removeChild(el);
+        }
+
+        var vid = document.getElementById("localVideo");
+
+
+        // var fullscreenbtn = document.getElementById("fullscreenbtn");
+        // var playbtn = document.getElementById("playpausebtn");
+        // var mutebtn = document.getElementById("mutebtn");
+        // var volumeslider = document.getElementById("volumeslider");
+
+        // playbtn.addEventListener("click", playPause, false);
+        // mutebtn.addEventListener("click", vidmute, false);
+        // volumeslider.addEventListener("change", setvolume, false);
+        vid.addEventListener("dblclick", toggleFullScreen, false);
+
+        function toggleFullScreen() {
+            if (vid.requestFullScreen) {
+                vid.requestFullScreen();
+            } else if (vid.webkitRequestFullScreen) {
+                vid.webkitRequestFullScreen();
+            } else if (vid.mozRequestFullScreen) {
+                vid.mozRequestFullScreen();
+            }
+        }
+
+        function playPause() {
+            if (vid.paused) {
+                vid.play();
+                playbtn.innerHTML = "Pause";
+            } else {
+                vid.pause();
+                playbtn.innerHTML = "Play";
+            }
+        }
+
+        function vidmute() {
+            if (vid.muted) {
+                vid.muted = false;
+                mutebtn.innerHTML = "Mute";
+            } else {
+                vid.muted = true;
+                mutebtn.innerHTML = "Unmute";
+            }
+        }
+
+        function setvolume() {
+            vid.volume = volumeslider.value / 100;
+        }
+    });
 
 };
 var pagedestroy = function() {
