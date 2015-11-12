@@ -235,6 +235,7 @@
 
 <!-- end row -->
 <script type="text/javascript">
+
 /* DO NOT REMOVE : GLOBAL FUNCTIONS!
  *
  * pageSetUp(); WILL CALL THE FOLLOWING FUNCTIONS
@@ -297,7 +298,8 @@ var pagefunction = function() {
 
 
     //Pasando el parámetro localVideoEl levanta automáticamente tu video en contenedor que se llame con el nombre asignado al parámetro
-    var webrtc = new SimpleWebRTC({
+    webrtc = new SimpleWebRTC({
+
         // the id/element dom element that will hold "our" video
         localVideoEl: 'localVideo',
         // the id/element dom element that will hold remote videos
@@ -389,8 +391,10 @@ var pagefunction = function() {
     }
 };
 var pagedestroy = function() {
-    webrtc.stopLocalVideo();
-    webrtc.leaveRoom();
+
+    window.webrtc.stopLocalVideo();
+    window.webrtc.leaveRoom();
+    $(".page-footer").show();
 };
 // end pagefunction
 // run pagefunction on load
