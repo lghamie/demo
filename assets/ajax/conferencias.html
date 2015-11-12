@@ -33,87 +33,84 @@
 <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="well" id="well2">
-        	<div class="table-responsive">
-            <table class="table table-striped table-forum" >
-                <thead>
-                    <tr>
-                        <th colspan="2">Mis cursos online</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- TR -->
-                    <tr>
-                        <div class="table-responsive">
-
-                            <table class="table table-bordered table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Nombre</th>
-                                        <th>Fecha</th>
-                                        <th>Hora inicio</th>
-                                        <th>Hora fin</th>
-                                        <th>Rol</th>
-                                        <th>Unirse</th>
-                                        <th>Editar</th>
-                                        <th>Eliminar</th>
-                                        <th>Info</th>
-                                    </tr>
-                                </thead>
-                        <p class="alert alert-warning">
-                    <i class="fa fa-info fa-fw fa-lg"></i><strong>Info:</strong> 
-                    Aquí se pueden ver los cursos a los que has sido invitado.
-                    </p>
-                            <tbody>
-                                    <tr id="guest">
-                                        <td>Curso 1</td>
-                                        <td>22 de Noviembre de 2015</td>
-                                        <td>15:00</td>
-                                        <td>17:00</td>
-                                        <td>Invitado</td>
-                                        <td><a href="#ajax/conferenceGuest.html" class="fa fa-toggle-right" id="join2">Unirse</a></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td> <a href="#ajax/conferenceHost.html" id="info1">+Info
+            <div class="table-responsive">
+                <table class="table table-striped table-forum">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Mis cursos online</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- TR -->
+                        <tr>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Unirse</th>
+                                            <th>Fecha</th>
+                                            <th>Hora Inicio</th>
+                                            <th>Hora fin</th>
+                                            <th>Rol</th>
+                                            <th>Editar</th>
+                                            <th>Eliminar</th>
+                                            <th>Info</th>
+                                        </tr>
+                                    </thead>
+                                    <p class="alert alert-warning">
+                                        <i class="fa fa-info fa-fw fa-lg"></i><strong>Info:</strong> Aquí se pueden ver los cursos a los que has sido invitado.
+                                    </p>
+                                    <tbody>
+                                        <tr id="guest">
+                                            <td>Curso 1</td>
+                                            <td><a href="#ajax/conferenceGuest.html" class="fa fa-toggle-right" id="join2">Unirse</a></td>
+                                            <td>22 de Noviembre de 2015</td>
+                                            <td>15:00</td>
+                                            <td>17:00</td>
+                                            <td>Invitado</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td> <a href="#ajax/conferenceHost.html" id="info1">+Info
                                         </a></td>
-                                    </tr>
-                                    <tr id="host">
-                                        <td>Curso 2</td>
-                                        <td>28 de Noviembre de 2015</td>
-                                        <td>09:00</td>
-                                        <td>12:00</td>
-                                        <td>Anfitrión</td>
-                                        <td><a href="#ajax/conferenceHost.html" class="fa fa-toggle-right" id="join1">Unirse</a></td>
-                                        <td><a href="#" class="fa fa-toggle-right" id="edit1">Editar</a></td>
-                                        <td><a href="#" class="fa fa-trash-o" id="delete1">Eliminar</a></td>
-                                        <td> <a href="#ajax/conferenceHost.html" id="info1">+Info
+                                        </tr>
+                                        <tr id="host">
+                                            <td>Curso 2</td>
+                                            <td><a href="#ajax/conferenceHost.html" class="fa fa-toggle-right" id="join1">Unirse</a></td>
+                                            <td>28 de Noviembre de 2015</td>
+                                            <td>09:00</td>
+                                            <td>12:00</td>
+                                            <td>Anfitrión</td>
+                                            <td><a href="#" class="fa fa-toggle-right" id="edit1">Editar</a></td>
+                                            <td><a href="#" class="fa fa-trash-o" id="delete1">Eliminar</a></td>
+                                            <td> <a href="#ajax/conferenceHost.html" id="info1">+Info
                                         </a></td>
-                                    </tr>
-                                    <tr id="guest">
-                                        <td>Curso 2</td>
-                                        <td>28 de Noviembre de 2015</td>
-                                        <td>09:00</td>
-                                        <td>12:00</td>
-                                        <td>Invitado</td>
-                                        <td><a href="#ajax/conferenceGuest.html" class="fa fa-toggle-right" id="join3">Unirse</a></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td> <a href="#ajax/conferenceHost.html" id="info1">+Info
+                                        </tr>
+                                        <tr id="guest">
+                                            <td>Curso 2</td>
+                                            <td><a href="#ajax/conferenceGuest.html" class="fa fa-toggle-right" id="join3">Unirse</a></td>
+                                            <td>28 de Noviembre de 2015</td>
+                                            <td>09:00</td>
+                                            <td>12:00</td>
+                                            <td>Invitado</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td> <a href="#ajax/conferenceHost.html" id="info1">+Info
                                         </a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <h4>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h4>
                             	<a class="btn btn-info btn-sm" href="#ajax/create-room.html">Crear</a>
 								<small>Ser el anfitrión de un nuevo curso.</small>
 							</h4>
-
-                        </div>
-                    </tr>
-                    <!-- end TR -->
+                            </div>
+                        </tr>
+                        <!-- end TR -->
+                    </tbody>
+                </table>
                 </tbody>
-            </table>
-            </tbody>
-            </table>
+                </table>
             </div>
         </div>
     </div>
@@ -123,7 +120,6 @@
 <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="well" id="well3">
-
             <table class="table table-striped table-forum">
                 <thead>
                     <tr>
@@ -138,39 +134,37 @@
                                 <thead>
                                     <tr>
                                         <th>Nombre</th>
+                                        <th>Unirse</th>
                                         <th>Hora inicio</th>
                                         <th>Hora fin</th>
-                                        <th>Unirse</th>
                                         <th>Info</th>
                                     </tr>
                                 </thead>
-                        <p class="alert alert-warning">
-                    <i class="fa fa-info fa-fw fa-lg"></i><strong>Info:</strong> 
-                    Aquí se pueden ver los cursos públicos que se están llevando a cabo en este momento.
-                    </p>
-                    
+                                <p class="alert alert-warning">
+                                    <i class="fa fa-info fa-fw fa-lg"></i><strong>Info:</strong> Aquí se pueden ver los cursos públicos que se están llevando a cabo en este momento.
+                                </p>
                                 <tbody>
                                     <tr>
                                         <td>Curso 3</td>
+                                        <td><a href="#ajax/conferenceGuest.html" class="fa fa-toggle-right" id="join2">Unirse</a></td>
                                         <td>15:00</td>
                                         <td>17:00</td>
-                                        <td><a href="#ajax/conferenceGuest.html" class="fa fa-toggle-right" id="join2">Unirse</a></td>
                                         <td> <a href="#ajax/conferenceHost.html" id="info1">+Info
                                         </a></td>
                                     </tr>
                                     <tr>
                                         <td>Curso 4</td>
+                                        <td><a href="#ajax/conferenceHost.html" class="fa fa-toggle-right" id="join1">Unirse</a></td>
                                         <td>09:00</td>
                                         <td>12:00</td>
-                                        <td><a href="#ajax/conferenceHost.html" class="fa fa-toggle-right" id="join1">Unirse</a></td>
                                         <td> <a href="#ajax/conferenceHost.html" id="info1">+Info
                                         </a></td>
                                     </tr>
                                     <tr>
                                         <td>Curso 5</td>
+                                        <td><a href="#ajax/conferenceGuest.html" class="fa fa-toggle-right" id="join3">Unirse</a></td>
                                         <td>09:00</td>
                                         <td>12:00</td>
-                                        <td><a href="#ajax/conferenceGuest.html" class="fa fa-toggle-right" id="join3">Unirse</a></td>
                                         <td> <a href="#ajax/conferenceHost.html" id="info1">+Info
                                         </a></td>
                                     </tr>
@@ -188,7 +182,6 @@
 </div>
 <!-- FIN TABLA CON MAS CURSOS-->
 <style>
-
 #well1,
 #well2,
 #well3 {
