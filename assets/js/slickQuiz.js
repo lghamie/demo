@@ -37,7 +37,7 @@
                 scoreAsPercentage: false,
                 perQuestionResponseMessaging: false,
                 perQuestionResponseAnswers: false,
-                completionResponseMessaging: false,
+                completionResponseMessaging: true,
                 displayQuestionCount: true,   // Deprecate?
                 displayQuestionNumber: true,  // Deprecate?
                 animationCallbacks: { // only for the methods that have jQuery animations offering callback
